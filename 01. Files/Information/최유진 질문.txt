@@ -1,0 +1,8 @@
+Semantic meaning means that the tag you use around content indicates the type of information it contains.
+
+질문내용 
+1. 현재 프론트엔드인지, 백엔드인지 아니면 풀스택인지?
+2. 새로운 컴퓨터 언어 공부방법 (무조건 반복 or 예제중심? 따로 필기하면서 공부하시나요?) => 개인적인 공부방법인거같아서 나한테 맞는게 무엇인가가 중요한가?
+1. 새로운 컴퓨터 언어 배울때 예제중심?
+2. 코딩 면접볼때 인터넷 검색이 불가할때를 대비해서 한 언어를 완벽히 마스터를 해야하는건지? 아니면 어떻게 구현만 할수 있는지 아는것이 중요한지?
+3. 

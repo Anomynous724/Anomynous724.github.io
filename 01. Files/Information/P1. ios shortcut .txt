@@ -1,0 +1,9 @@
+P1.-Shortcut-of-Studying-Plan
+Through ios's shortcut and automation, make the shortcut of building of Studying and Recap Plan.
+
+tool : ios automation(calender or reminder)
+
+goal : 시반 복습법에 따라
+	새로운 계획 입력시 리마인더 알림
+	입력한 일자에 따라 복습계획 자동추가 리마인더 알림
+
