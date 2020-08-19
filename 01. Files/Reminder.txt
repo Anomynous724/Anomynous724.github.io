@@ -1,4 +1,4 @@
 할일
 2020-08-19
 - account id rename
-- file rearrangement(clearly)
+- file rearrangement(clearly)	√

@@ -6,4 +6,4 @@ cmd - npm init에서 막힘
 생활코딩학습
 
 2020-08-19
-file rearangement (structural)
+file rearangement (structural) √
