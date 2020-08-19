@@ -1,0 +1,26 @@
+2020-07-07 보던거
+
+github 공부
+
+http://guruble.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%84%B0%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%90%98%EB%8A%94-%EA%B2%83/
+
+https://velog.io/@imacoolgirlyo/Git-fork%EC%99%80-clone-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90-5sjuhwfzgp#:~:text=%EC%9D%84%20%EC%B0%B8%EA%B3%A0%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.-,fork,%EA%B7%B8%EB%8C%80%EB%A1%9C%20%EB%B3%B5%EC%A0%9C%ED%95%98%EB%8A%94%20%EA%B8%B0%EB%8A%A5%EC%9D%B4%EB%8B%A4.&text=%EB%82%B4%EA%B0%80%20%EB%A7%8C%EB%93%A0%20%EC%BD%94%EB%93%9C%EA%B0%80%20%E3%85%87%E3%85%8B%EB%90%98%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90%20Merge%20%EB%90%9C%EB%8B%A4.
+
+https://git-scm.com/book/ko/v2/GitHub-GitHub-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0
+
+
+- reference website
+
+https://evan-moon.github.io/2019/07/28/git-tutorial-advanced/
+
+- 홈페이지 
+
+https://recoveryman.tistory.com/323?category=635733
+
+- node.js reference
+https://nhj12311.tistory.com/290
+
+
+- web framework reference
+
+https://moolgogiheart.tistory.com/87
