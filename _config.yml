@@ -13,15 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Gray
+title: V's log
 email: email@email.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Lorem Ipsum
-url: "https://brunofolle.com.br" # the base hostname & protocol for your site, e.g. http://example.com
+  JS
+url: "https://anomynous724.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /blog
 
 # Build settings
-markdown: kramdown
+markdown: V
 theme: gray
 permalink: /:title/
 plugins:
@@ -34,12 +34,12 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude: [
-  'Gemfile', 
-  'Gemfile.lock', 
-  'node_modules', 
+  'Gemfile',
+  'Gemfile.lock',
+  'node_modules',
   'Gemfile',
   'gray.gemspec',
-  'Gulpfife.js', 
+  'Gulpfife.js',
   'package.json',
   'package-lock.json',
   'LICENSE.txt',
@@ -75,9 +75,9 @@ googleverify: ''
 #email formspree
 emailform: email@email.com
 
-#disqus 
-disqus_user: 
+#disqus
+disqus_user:
 
 #about-me
-aboutme: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, odit? Quibusdam atque laudantium debitis, officia esse nobis dolor, dolorem error eum, eos ea. Illum quae recusandae deserunt quo, minus ex!
-aboutmeimg: https://www.placecage.com/150/150
+aboutme: Hello!
+aboutmeimg: https://i.redd.it/3k7uvh8rz5k41.jpg
