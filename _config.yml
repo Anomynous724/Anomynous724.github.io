@@ -17,7 +17,7 @@ title: V's blog
 email: email@email.com
 description: >- # this means to ignore newlines until "baseurl:"
   JS
-url: "https://brunofolle.com.br" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://anomynous724.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /blog
 
 # Build settings
