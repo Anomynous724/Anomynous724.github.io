@@ -1,9 +1,0 @@
-개발자 일기
-
-2020-07-14
-node.js 설치 및 atom(code editor 체험)
-cmd - npm init에서 막힘
-생활코딩학습
-
-2020-08-19
-file rearangement (structural) √
