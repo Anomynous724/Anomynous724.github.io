@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: V's blog
-email: email@email.com
+email: jsy724724@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   JS
 url: "https://anomynous724.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
@@ -73,7 +73,7 @@ language: ''
 googleverify: ''
 
 #email formspree
-emailform: email@email.com
+emailform: jsy724724@gmail.com
 
 #disqus
 disqus_user:
