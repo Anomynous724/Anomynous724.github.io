@@ -116,5 +116,3 @@ Github Pages와 같은 정적사이트호스팅을 이용하면 설치도 쉬웠
 
 블로그 만들기 GitHub 편 총정리
 (https://blog.chulgil.me/how-to-make-blog-using-github/) - Chulgil.Lee
-
-
