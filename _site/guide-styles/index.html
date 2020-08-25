@@ -7,8 +7,8 @@
     <!-- 1 - get google site verification code -->
     <meta name="google-site-verification" content="" />
     <link href="https://fonts.googleapis.com/css?family=Roboto|Lobster|Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/app.min.css?v=20200824173638">
-    <script src="http://localhost:4000/assets/js/app.min.js?v=20200824173638"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/app.min.css?v=20200825153558">
+    <script src="http://localhost:4000/assets/js/app.min.js?v=20200825153558"></script>
     <link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/assets/images/favicon.png">
     <!-- 2 - get google analitycs id -->
     <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
@@ -285,26 +285,32 @@ in a block
     </section>
 </main>
 <!-- 3 - includes disqus and footer -->
-<div id="disqus_thread"></div>
-<script>
+<main>
+  <section class="row ">
+    <article class="small-12 large-8 large-offset-2 columns margin-bottom-2" >
+      <div id="disqus_thread"></div>
+      <script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://commentsite-2.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://commentsite-2.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </article>
+  </section>
+</main>
 
         <!-- 1 - social networks -->
         <footer class="row expanded">
@@ -312,14 +318,17 @@ s.setAttribute('data-timestamp', +new Date());
                 <div class="row">
                     <div class="small-12 large-6 text-center columns">
                         <h3 class="separator-center">About me</h3>
-                        <p>
-    <img class="about-me" src="https://i.redd.it/3k7uvh8rz5k41.jpg" alt="About Me">
-</p>
-<p>
-    The overman... Who has organized the chaos of his passions, given style to his character, and become creative. Aware of life's terrors, he affirms life without resentment. - Fredrich Nietzche
-</p>
-<p>
-    
+                        <main>
+  <section class="row ">
+    <article class="small-12 large-8 large-offset-2 columns margin-bottom-2" >
+      <p>
+          <img class="about-me" src="https://i.redd.it/3k7uvh8rz5k41.jpg" alt="About Me">
+      </p>
+      <p>
+          The overman... Who has organized the chaos of his passions, given style to his character, and become creative. Aware of life's terrors, he affirms life without resentment. - Fredrich Nietzche
+      </p>
+      <p>
+          
 <!-- <a href="" target="_blank">
     <i class="fab fa-facebook-square"></i>
 </a> -->
@@ -336,11 +345,19 @@ s.setAttribute('data-timestamp', +new Date());
     <i class="fab fa-github-square"></i>
 </a>
 
-</p>
+      </p>
+    </article>
+  </section>
+</main>
+
                     </div>
                     <div class="small-12 large-6 columns">
                         <h3 class="separator-center">Recent Posts</h3>
                         <ul class="no-bullet">
+                            
+                            <li>
+                                <a href="/first-step-of-github-blog/">First Step of Github Blog</a>
+                            </li>
                             
                             <li>
                                 <a href="/pros-and-cons-using-github-blog/">Pros & Cons of using Github Blog</a>
