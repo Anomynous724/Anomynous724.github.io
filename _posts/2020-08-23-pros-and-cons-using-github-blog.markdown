@@ -2,7 +2,7 @@
 layout: post # 1 - layout of this post
 title: "Pros & Cons of using Github Blog" # 2 - title of post
 date: 23/08/2020 # 3 - date of post
-categories: Github # 4 - Categories of post
+categories: Github Blog # 4 - Categories of post
 description: Pros & Cons of using Github Blog # 6 - description post
 excerpt: Pros & Cons of using Github Blog # 7 - excpert of post
 imageminiature: https://picsum.photos/id/993/400/300 # 9 - image of index
