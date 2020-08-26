@@ -2,7 +2,7 @@
 layout: post # 1 - layout of this post
 title: "First Step of Github Blog" # 2 - title of post
 date: 25/08/2020 # 3 - date of post
-categories: Github jekyll # 4 - Categories of post
+categories: Github Jekyll # 4 - Categories of post
 description: First Step of Github Blog # 6 - description post
 excerpt: First Step of Github Blog # 7 - excpert of post
 imageminiature: https://picsum.photos/id/993/400/300 # 9 - image of index
