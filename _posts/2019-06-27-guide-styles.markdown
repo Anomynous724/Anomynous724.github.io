@@ -2,7 +2,7 @@
 layout: post # 1 - layout of this post
 title: "Guide Styles" # 2 - title of post
 date: 27/06/2019 # 3 - date of post
-categories: guidestyles # 4 - Categories of post
+categories: Guidestyles # 4 - Categories of post
 description: Guide styles # 6 - description post
 excerpt: Here have a guide styles. # 7 - excpert of post
 imageminiature: https://picsum.photos/id/993/400/300 # 9 - image of index
@@ -14,7 +14,7 @@ This is a paragraph
 
 This is another paragraph
 
-	
+
 # Header 1
 ## Header 2
 ### Header 3 
@@ -61,6 +61,7 @@ Mixed Lists
 Blockquotes
 
 > Quoted text.
+>
 > > Quoted quote.
 
 > * Quoted 
