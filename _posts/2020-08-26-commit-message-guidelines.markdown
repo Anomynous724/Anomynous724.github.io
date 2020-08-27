@@ -8,9 +8,12 @@ excerpt: Commit Message Guidelines # 7 - excpert of post
 imageminiature: https://picsum.photos/id/993/400/300 # 9 - image of inde
 ---
 
-## Commit Message Guidelines
+# Commit Message Guidelines
 
-```
+---
+
+### Overview
+
 Short (72 chars or less) summary
 
 More detailed explanatory text. Wrap it to 72 characters. The blank
@@ -26,19 +29,22 @@ Further paragraphs come after blank lines.
 - Bullet points are okay, too.
 - Typically a hyphen or asterisk is used for the bullet, followed by a
   single space. Use a hanging indent.
-```
+
+---
 
 ### Example for a commit message
 
-```
-Add CPU arch filter scheduler support
+​	`Add CPU arch filter scheduler support`
 
-In a mixed environment of…
-```
+​	`In a mixed environment of…`
+
+---
 
 ### A properly formed git commit subject line should always be able to complete the following sentence
 
 If applied, this commit will *\<your subject line here\>*
+
+---
 
 ### Rules for a great git commit message style
 
@@ -48,6 +54,8 @@ If applied, this commit will *\<your subject line here\>*
 * Use the imperative mood in the subject line
 * Wrap lines at 72 characters
 * Use the body to explain what and why you have done something. In most cases, you can leave out details about how a change has been made.
+
+---
 
 ### Information in commit messages
 
@@ -61,7 +69,9 @@ If applied, this commit will *\<your subject line here\>*
 * Describe any limitations of the current code.
 * Do not include patch set-specific comments.
 
-Details for each point and good commit message examples can be found on https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages
+Details for each point and good commit message examples can be found on [https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages](https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages)
+
+---
 
 ### References in commit messages
 
@@ -83,6 +93,8 @@ In body:
 …
 Fixes #123, #124
 ```
+
+---
 
 ### Sources
 
