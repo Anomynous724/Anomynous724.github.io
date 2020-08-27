@@ -1,32 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-26T17:34:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">V’s blog</title><subtitle>JS</subtitle><entry><title type="html">Commit Message Guidelines</title><link href="http://localhost:4000/commit-message-guidelines/" rel="alternate" type="text/html" title="Commit Message Guidelines" /><published>2020-08-26T00:00:00+09:00</published><updated>2020-08-26T00:00:00+09:00</updated><id>http://localhost:4000/commit-message-guidelines</id><content type="html" xml:base="http://localhost:4000/commit-message-guidelines/">&lt;h2 id=&quot;commit-message-guidelines&quot;&gt;Commit Message Guidelines&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-27T14:15:42+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">V’s blog</title><subtitle>JS</subtitle><entry><title type="html">How to move a full Git repository with Commit history</title><link href="http://localhost:4000/how-to-move-a-full-git-repository-with-commit-history/" rel="alternate" type="text/html" title="How to move a full Git repository with Commit history" /><published>2020-08-27T00:00:00+09:00</published><updated>2020-08-27T00:00:00+09:00</updated><id>http://localhost:4000/how-to-move-a-full-git-repository-with-commit-history</id><content type="html" xml:base="http://localhost:4000/how-to-move-a-full-git-repository-with-commit-history/">&lt;h1 id=&quot;내-저장소에-있는-모든-파일들을-통째로-다른-repository로-옮기고-싶을-때---github&quot;&gt;내 저장소에 있는 모든 파일들을 통째로 다른 repository로 옮기고 싶을 때! - Github&lt;/h1&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Short (72 chars or less) summary
+&lt;hr /&gt;
 
-More detailed explanatory text. Wrap it to 72 characters. The blank
+&lt;p&gt;아직 Git을 잘 모르는 상태인데( 특히 branch..) BoostCamp Git이 만들어졌어요.&lt;/p&gt;
+
+&lt;p&gt;이제 내 개인의 저장소가 아닌, 이 곳에서 add, commit, push 작업을 진행하게 될 것 같아요 .&lt;/p&gt;
+
+&lt;p&gt;“하지만 나는 내 저장소에만 저장해놨는데…이걸 그대로 commit이력까지 복사해서 통째로 다른 저장소로 옮길 방법이 없을까?”라는 궁금증이 들었어요!&lt;/p&gt;
+
+&lt;p&gt;Git초보자 에게는 어려울수도 있으니 ( 처음에 저한테는 너무 어려웠어요 ㅠㅠ )방법을 공유해보려고 해요: )&lt;/p&gt;
+
+&lt;p&gt;잘 따라하면 쉬우니 다들 따라해보세요!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;먼저 &lt;strong&gt;옮기고 싶은&lt;/strong&gt; (지금은 제 저장소) &lt;strong&gt;저장소 https 주소&lt;/strong&gt;를 복사주세요!!&lt;/p&gt;
+
+&lt;p&gt;제 저장소 https주소를 보는법은 git에서도 볼 수 있지만 터미널로도 볼 수 있어요.&lt;/p&gt;
+
+&lt;p&gt;현재 내가 연결되어있는 Git을 보려면 git remote 를 터미널창에 입력해주세요.&lt;/p&gt;
+
+&lt;p&gt;자세히 보고싶으시다면 &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote -v&lt;/code&gt;를 입력해주세요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/27/2020-08-27-how-to-move-a-full-git-repository-with-commit-history/01. Type git remote -v.png&quot; alt=&quot;img&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;여기가 제 저장소 랍니다. :)&lt;/p&gt;
+
+&lt;p&gt;원하시는 방법으로 현재 제 저장소의 https주소를 복사했다면, 밑의 커맨드라인에서 주소부분만 바꾸어 터미널창에 입력해주세요.&lt;/p&gt;
+
+&lt;p&gt;​	&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone --mirror https://example.git&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/27/2020-08-27-how-to-move-a-full-git-repository-with-commit-history/02. Type git clone --mirror.png&quot; alt=&quot;img&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게요!!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;그리고 다시 remote를 하여 ‘길’을 만들어주는 작업을 할 겁니다.&lt;/p&gt;
+
+&lt;p&gt;이제 저는 제 저장소가 아닌 다른 저장소에서 작업을 한다고 그랬죠?&lt;/p&gt;
+
+&lt;p&gt;그러면 제가 소스코드를 수정하고 다시 add, commit, push했을 때, 제 저장소가 아닌 새로운 저장소에 작업이 수행되어야 겠죠??&lt;/p&gt;
+
+&lt;p&gt;그러면 우리는 &lt;strong&gt;제 로컬Git&lt;/strong&gt;과 &lt;strong&gt;새 repository&lt;/strong&gt;를 &lt;strong&gt;연결&lt;/strong&gt;해주는 ‘길’을 만들어야해요. 그럴려면 제가 올릴 소스코드 들이 있는 곳으로 이동해야겠죠? 저는 아예 처음부터 제 제가 올릴 소스코드가 있는 곳에서 작업을 했답니다. 아닌 분들은 cd명령어를 통해 디렉토리를 꼭 이동해주세요!!!&lt;/p&gt;
+
+&lt;p&gt;그리고 우리가 옮길 &lt;strong&gt;새로운 저장소의 https주소&lt;/strong&gt;를 복사해주고,&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git remote set-url --push origin https://example&lt;/code&gt;을 터미널창에 입력해주세요&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/27/2020-08-27-how-to-move-a-full-git-repository-with-commit-history/03. Type git remote set-url --push origin.png&quot; alt=&quot;img&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게요 :) 이제 ‘길’이 만들어진거랍니다XD&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이제 마지막으로 push를 해야겠죠?&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git push --mirror&lt;/code&gt;를 터미널창에 입력해주세요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/27/2020-08-27-how-to-move-a-full-git-repository-with-commit-history/04. Type git push --mirror.png&quot; alt=&quot;img&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이러면 제 원래 저장소에 있던 모든 파일과 commit이력까지 새로운 저장소로 옮겨지게 된답니다 XD&lt;/p&gt;
+
+&lt;p&gt;Git은 간편하면서도 어려운 것 같아요. 저도 아직 Git 초보라 배워야 할게 정말 많은 것 같아요.&lt;/p&gt;
+
+&lt;p&gt;이제 길이 새로운 곳으로 잘 만들어졌나 확인해 볼까요?  위에서 처럼 remote명령어를 통해 확인해 볼게요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/27/2020-08-27-how-to-move-a-full-git-repository-with-commit-history/05. Type git remote.png&quot; alt=&quot;img&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;새로운 저장소로 바뀐 게 보이시나요? ㅎㅎ&lt;/p&gt;
+
+&lt;p&gt;잘 따라하시고 도움이 되었으면 좋겠어요 :)&lt;/p&gt;
+
+&lt;p&gt;ps. 제목을 쓰다가 헷갈려서 찾아본건데 통채로가 아니라 통째로가 맞는 표현이네요 :) 통채로는 통째로의 비표준어라 하니 주의해서 써야겠어요.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;sources&quot;&gt;Sources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://zeddios.tistory.com/5&lt;/li&gt;
+  &lt;li&gt;https://stackoverflow.com/questions/17371150/moving-git-repository-content-to-another-repository-preserving-history&lt;/li&gt;
+  &lt;li&gt;https://www.atlassian.com/git/tutorials/git-move-repository&lt;/li&gt;
+  &lt;li&gt;https://itnext.io/git-repository-transfer-keeping-all-history-670fe04cd5e4&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to move a full Git repository with Commit history</summary></entry><entry><title type="html">Commit Message Guidelines</title><link href="http://localhost:4000/commit-message-guidelines/" rel="alternate" type="text/html" title="Commit Message Guidelines" /><published>2020-08-26T00:00:00+09:00</published><updated>2020-08-26T00:00:00+09:00</updated><id>http://localhost:4000/commit-message-guidelines</id><content type="html" xml:base="http://localhost:4000/commit-message-guidelines/">&lt;h1 id=&quot;commit-message-guidelines&quot;&gt;Commit Message Guidelines&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;overview&quot;&gt;Overview&lt;/h3&gt;
+
+&lt;p&gt;Short (72 chars or less) summary&lt;/p&gt;
+
+&lt;p&gt;More detailed explanatory text. Wrap it to 72 characters. The blank
 line separating the summary from the body is critical (unless you omit
-the body entirely).
+the body entirely).&lt;/p&gt;
 
-Write your commit message in the imperative: &quot;Fix bug&quot; and not &quot;Fixed
-bug&quot; or &quot;Fixes bug.&quot; This convention matches up with commit messages
-generated by commands like git merge and git revert.
+&lt;p&gt;Write your commit message in the imperative: “Fix bug” and not “Fixed
+bug” or “Fixes bug.” This convention matches up with commit messages
+generated by commands like git merge and git revert.&lt;/p&gt;
 
-Further paragraphs come after blank lines.
+&lt;p&gt;Further paragraphs come after blank lines.&lt;/p&gt;
 
-- Bullet points are okay, too.
-- Typically a hyphen or asterisk is used for the bullet, followed by a
-  single space. Use a hanging indent.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Bullet points are okay, too.&lt;/li&gt;
+  &lt;li&gt;Typically a hyphen or asterisk is used for the bullet, followed by a
+single space. Use a hanging indent.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;example-for-a-commit-message&quot;&gt;Example for a commit message&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Add CPU arch filter scheduler support
+&lt;p&gt;​	&lt;code class=&quot;highlighter-rouge&quot;&gt;Add CPU arch filter scheduler support&lt;/code&gt;&lt;/p&gt;
 
-In a mixed environment of…
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;​	&lt;code class=&quot;highlighter-rouge&quot;&gt;In a mixed environment of…&lt;/code&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;a-properly-formed-git-commit-subject-line-should-always-be-able-to-complete-the-following-sentence&quot;&gt;A properly formed git commit subject line should always be able to complete the following sentence&lt;/h3&gt;
 
 &lt;p&gt;If applied, this commit will &lt;em&gt;&amp;lt;your subject line here&amp;gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;rules-for-a-great-git-commit-message-style&quot;&gt;Rules for a great git commit message style&lt;/h3&gt;
 
@@ -38,6 +133,8 @@ In a mixed environment of…
   &lt;li&gt;Wrap lines at 72 characters&lt;/li&gt;
   &lt;li&gt;Use the body to explain what and why you have done something. In most cases, you can leave out details about how a change has been made.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;information-in-commit-messages&quot;&gt;Information in commit messages&lt;/h3&gt;
 
@@ -53,7 +150,9 @@ In a mixed environment of…
   &lt;li&gt;Do not include patch set-specific comments.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Details for each point and good commit message examples can be found on https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages&lt;/p&gt;
+&lt;p&gt;Details for each point and good commit message examples can be found on &lt;a href=&quot;https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages&quot;&gt;https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;references-in-commit-messages&quot;&gt;References in commit messages&lt;/h3&gt;
 
@@ -73,6 +172,8 @@ In a mixed environment of…
 Fixes #123, #124
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&quot;sources&quot;&gt;Sources&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -80,23 +181,30 @@ Fixes #123, #124
   &lt;li&gt;https://wiki.openstack.org/wiki/GitCommitMessages&lt;/li&gt;
   &lt;li&gt;http://chris.beams.io/posts/git-commit/&lt;/li&gt;
   &lt;li&gt;https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Commit Message Guidelines</summary></entry><entry><title type="html">First Step of Github Blog</title><link href="http://localhost:4000/first-step-of-github-blog/" rel="alternate" type="text/html" title="First Step of Github Blog" /><published>2020-08-25T00:00:00+09:00</published><updated>2020-08-25T00:00:00+09:00</updated><id>http://localhost:4000/first-step-of-github-blog</id><content type="html" xml:base="http://localhost:4000/first-step-of-github-blog/">&lt;h2 id=&quot;step-1--깃-블로그란&quot;&gt;Step 1:  깃 블로그란&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Commit Message Guidelines</summary></entry><entry><title type="html">First Step of Github Blog</title><link href="http://localhost:4000/first-step-of-github-blog/" rel="alternate" type="text/html" title="First Step of Github Blog" /><published>2020-08-25T00:00:00+09:00</published><updated>2020-08-25T00:00:00+09:00</updated><id>http://localhost:4000/first-step-of-github-blog</id><content type="html" xml:base="http://localhost:4000/first-step-of-github-blog/">&lt;h1 id=&quot;first-step-of-github-blog&quot;&gt;First Step of Github Blog&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;step-1--깃-블로그란&quot;&gt;Step 1:  깃 블로그란&lt;/h2&gt;
+
 &lt;p&gt;깃 블로그란  Github 저장소에 저장된 html 파일과 같은 정적 웹 문서들을 GitHub에서 무료로 웹에서 볼 수 있도록 호스팅 서비스(github pages)를 제공해 주는 것입니다. 
 때문에 Github을 이용하는 사용자들은 &lt;strong&gt;누구나 고유의 정적 웹 사이트 1개를 가질 수 있습니다.&lt;/strong&gt; 계정이 없다면 &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt;에서 Github 계정 생성합니다.
 계정을 만들고 신규 Repository를 &lt;strong&gt;{Git ID}.github.com&lt;/strong&gt; 으로 세팅합니다.&lt;/p&gt;
 
 &lt;p class=&quot;notice--danger&quot;&gt;&lt;strong&gt;Please Note:&lt;/strong&gt; 해당 포스트는 어느 정도 깃의 사용법을 알고 있다는 가정하에 작성하였습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/create-repository.png&quot; alt=&quot;Git repository 신규 생성 이미지&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/create-repository.png&quot; alt=&quot;Git repository 신규 생성 이미지&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;정상적으로 생성되었다면 세팅 메뉴 중 하단 GitHub Pages가 그림과 같이 활성화되어있을 것입니다.
 &lt;br /&gt; https://github.com/{ Git ID }/{ Repository 이름 }/settings &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/settings-1.png&quot; alt=&quot;Git repository Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/settings-1.png&quot; alt=&quot;Git repository Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/settings-2.png&quot; alt=&quot;Git repository Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/settings-2.png&quot; alt=&quot;Git repository Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;위 그림과 같이 정상적으로 반영 되었다면 https://{ Git ID }.github.io/ URL 접근 가능합니다.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;step-2-gitblog와-jekyll&quot;&gt;Step 2: GitBlog와 Jekyll&lt;/h2&gt;
 
@@ -109,26 +217,27 @@ Fixes #123, #124
 필자의 선택은 꾸준한 업데이트가 강점인 &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes&quot; target=&quot;_blank&quot;&gt;https://github.com/mmistakes/minimal-mistakes&lt;/a&gt;테마를 선택하였습니다. ReadMe.md파일 안에 해당 테마에 대한 자세한 사용 방법이 기술되어 있습니다.&lt;br /&gt;
 테마를 Fork뜨거나 Download합니다.  필자는 Fork시 GitHub 녹색 잔디가 심어지지 않아 다운로드 후  작업하였습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/fork.png&quot; alt=&quot;Fork확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/fork.png&quot; alt=&quot;Fork확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;다운로드한 minimal-mistakes테마 Zip파일을 Step1에서 생성한 Repository하위에서 압축 해제합니다.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;step-3-로컬-개발-환경을-위한-루비설치&quot;&gt;Step 3: 로컬 개발 환경을 위한 루비설치&lt;/h2&gt;
 
 &lt;p&gt;Jekyll은 하나의 동적 객체 지향 스크립트 프로그래밍 언어인 Ruby로 작성되었기 때문에 로컬 개발 환경 세팅을 위해서는 Rubby 설치가 필요합니다. 필자는&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot; target=&quot;_blank&quot;&gt; https://rubyinstaller.org/downloads/ &lt;/a&gt;해당 사이트에서 2.5.7 버전으로 받아 설치하였습니다. 이제 minimal-mistakes테마를 다운받고 압축해제 하였던 폴더 위치로 이동합니다. 이 후 cmd창을 열어 아래 명령어를 차례로 실행합니다. 꼭 &lt;strong&gt;Gemfile&lt;/strong&gt;이 있는 위치에서 실행하여야 합니다.&lt;/p&gt;
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bundler&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; 
-&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# gem install bundler&lt;/code&gt;&lt;/p&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# bundle &lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/console.png&quot; alt=&quot;Ruby Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# jekyll serve&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/console.png&quot; alt=&quot;Ruby Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;정상적으로 설치가 되었다면 이제 &lt;a href=&quot;http://localhost:4000/&quot; target=&quot;_blank&quot;&gt;http://localhost:4000/ &lt;/a&gt;으로 해당 테마를 확인할 수 있습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/start-mini.png&quot; alt=&quot;로컬서버&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/start-mini.png&quot; alt=&quot;로컬서버&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p class=&quot;notice--danger&quot;&gt;&lt;strong&gt;Please Note:&lt;/strong&gt; Rubby 버전에 따라 안되는 케이스가 발생하여 2.5.7로 진행하였습니다. 로컬 서버 포트를 4000에서 다른것으로 바꾸고 싶다면 # jekyll serve –port {원하는 포트 번호} 명령어로 서버를 실행하면 됩니다.&lt;/p&gt;
 
@@ -147,9 +256,12 @@ docs( 샘플 파일들이 들어가 있는  폴더로 우선 나중을 위해 �
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;push를 진행하면 이제 https://{GitID}.github.io 주소로 같은 화면을 볼 수 있습니다.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;step-4-sample-게시물-확인&quot;&gt;Step 4: Sample 게시물 확인&lt;/h2&gt;
+
 &lt;p&gt;이전에 이동했덩 docs폴더안 _post폴더를  우리 _post에 덮어 씌운 후  jekyll 서버를 재시작 합니다.  그렇다면 이제   &lt;a href=&quot;http://localhost:4000/&quot; target=&quot;_blank&quot;&gt;http://localhost:4000/ &lt;/a&gt;에서  블로그 게시물 디자인에 참고할 만한  다양한 샘플 포스트를 확인할 수 있습니다.
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/sample-post.png&quot; alt=&quot;Ruby Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/sample-post.png&quot; alt=&quot;Ruby Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;블로그 게시물에 대한 네이밍 규칙은 YEAR-MONTH-DAY-title.md입니다. 추후 _post폴더 아래에 게시물을 작성할 때 해당 형식을 지켜 작성해야합니다.&lt;/p&gt;
 
@@ -159,14 +271,16 @@ YAML :  &lt;a href=&quot;https://yaml.org/&quot; target=&quot;_blank&quot;&gt; h
 Liquid 문법 : &lt;a href=&quot;https://shopify.github.io/liquid/&quot; target=&quot;_blank&quot;&gt;https://shopify.github.io/liquid/ &lt;/a&gt; &lt;br /&gt;
 Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/structure/&quot; target=&quot;_blank&quot;&gt;https://jekyllrb-ko.github.io/docs/structure/ &lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bundler&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; 
-&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# gem install bundler&lt;/code&gt;&lt;/p&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# bundle &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# jekyll serve&lt;/code&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;step-5-프로젝트-세팅&quot;&gt;Step 5: 프로젝트 세팅&lt;/h2&gt;
+
 &lt;h3 id=&quot;_configyml-수정&quot;&gt;_config.yml 수정&lt;/h3&gt;
 
 &lt;p&gt;지킬 테마에서 자신의 블로그 페이지에 맞게 커스텀 하기위해 _config.yml 을 수정하였습니다.  웹에대한 기본 지식이 있다면 어디를 수정하면 어디가 반영 될 지 직관적으로 알 수 있게 되어있습니다.  꼭 수정해 주어야 하는 부분만 포스팅 하고 이 외 수정한 부분은 아래 주소에서 확인하시기 바랍니다.
@@ -371,7 +485,10 @@ Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/struc
 &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;custom/_cunstomcss&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;step-6-admin-세팅&quot;&gt;Step 6: Admin 세팅&lt;/h2&gt;
+
 &lt;p&gt;게시글을  md문법으로 작성하면 되지만 뭔가 불편하여 찾아보니 admin페이지를 통해 쉽게 게시글을 작성할 수 있다는 것을 알게 되어 방법을 공유합니다. 세팅하는 방법은 간단합니다. Gemfile파일 안에 해당 부분을 작성합니다. 
 &lt;a href=&quot;https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile&quot; target=&quot;_blank&quot;&gt;https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem 'jekyll-admin', group: :jekyll_plugins
@@ -382,33 +499,39 @@ Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/struc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;이제  &lt;a href=&quot;http://localhost:4000/admin/&quot; target=&quot;_blank&quot;&gt;http://localhost:4000/admin/&lt;/a&gt; 으로 접근 가능하며 게시물을 쉽게 작성하고 수정할 수 있습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/admin.png&quot; alt=&quot;admin Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/admin.png&quot; alt=&quot;admin Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;step-7-도메인-연결&quot;&gt;Step 7: 도메인 연결&lt;/h2&gt;
+
 &lt;p&gt;구매한 도메인이 있어 http://{깃헙id}.github.io/ 형식이 아닌 자신이 구매한 도메인으로 연결하는 방법을 공유하겠습니다. 우선 자신 Repository의 Settings로 접속합니다. ( https://github.com/{깃헙 id}/{Repository}/settings) 이제 중반 GitHub Pages 옵션 중 Custom domain부분에 자신이 구매한 Domain주소를 작성합니다.
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/domain.png&quot; alt=&quot;도메인 연결&quot; class=&quot;align-center&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/domain.png&quot; alt=&quot;도메인 연결&quot; class=&quot;align-center&quot; /&gt;
 이미지 중 Custom domain 옆 &lt;a href=&quot;https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site&quot; target=&quot;_blank&quot;&gt;Learn more&lt;/a&gt;을 눌러보면  관련된 정보를 획득할 수 있습니다. 이 중  &lt;a href=&quot;https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site&quot; target=&quot;_blank&quot;&gt;Managing a custom domain for your GitHub Pages site&lt;/a&gt; 내용 중  중반 ALIAS설정하는 방법이 나와있습니다.
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/alias.png&quot; alt=&quot;admin Setting 확인&quot; class=&quot;align-center&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/alias.png&quot; alt=&quot;admin Setting 확인&quot; class=&quot;align-center&quot; /&gt;
 해당 A 레코드를  도메인을 구매한 사이트에 세팅해줍니다. 필자는 가비아를 사용하여 해당과 같이 수정진행 하였습니다. 
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/gabia.png&quot; alt=&quot;가비아 Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/gabia.png&quot; alt=&quot;가비아 Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;step-8-makerwidget-및-disqus-세팅&quot;&gt;Step 8: MakerWidget 및 Disqus 세팅&lt;/h2&gt;
+
 &lt;p&gt;필자 블로그 우측 하단에 떠있는 위젯과 댓글을 위한 Disqus세팅방법을 공유하겠습니다.&lt;/p&gt;
 
 &lt;h3 id=&quot;makerwidget-세팅&quot;&gt;MakerWidget 세팅&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://makerwidget.com&quot; target=&quot;_blank&quot;&gt;https://makerwidget.com&lt;/a&gt;에서 회원 가입을 진행합니다. 이후 LINK LISTS , PROJECTS등 원하는 부분을 작성하고 SAVE합니다. 
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/marker-widget.png&quot; alt=&quot;MakerWidget 세팅&quot; class=&quot;align-center&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/marker-widget.png&quot; alt=&quot;MakerWidget 세팅&quot; class=&quot;align-center&quot; /&gt;
 최종적으로 저장 후 EMBED WIDGET을 확인합니다. 
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/marker-widget2.png&quot; alt=&quot;MakerWidget 세팅&quot; class=&quot;align-center&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/marker-widget2.png&quot; alt=&quot;MakerWidget 세팅&quot; class=&quot;align-center&quot; /&gt;
 해당 스크립트를 프로젝트 js에 적어주시면 바로 적용됩니다.&lt;/p&gt;
 
 &lt;h3 id=&quot;disqus-세팅&quot;&gt;Disqus 세팅&lt;/h3&gt;
 &lt;p&gt;게시물에 댓글을 달 수있게 기능을 제공하는 Disqus는 유로인 경우도 있지만 무료서비스 중 Non-Commercial(Under 5,000 total daily pageviews)로 선택한다면 무료로 사용 가능합니다. 우선 
 &lt;a href=&quot;https://disqus.com/&quot; target=&quot;_blank&quot;&gt;https://disqus.com/&lt;/a&gt;에서 회원가입을 진행합니다.
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/disque.png&quot; alt=&quot;DisQue 세팅&quot; class=&quot;align-center&quot; /&gt;
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/disque2.png&quot; alt=&quot;DisQue 세팅&quot; class=&quot;align-center&quot; /&gt;
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/disque3.png&quot; alt=&quot;DisQue 세팅&quot; class=&quot;align-center&quot; /&gt;
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/disque4.png&quot; alt=&quot;DisQue 세팅&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/disque.png&quot; alt=&quot;DisQue 세팅&quot; class=&quot;align-center&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/disque2.png&quot; alt=&quot;DisQue 세팅&quot; class=&quot;align-center&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/disque3.png&quot; alt=&quot;DisQue 세팅&quot; class=&quot;align-center&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/disque4.png&quot; alt=&quot;DisQue 세팅&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;회원가입이 완료되셨다면  이제 _config.yml을 수정해 줍니다.  provider에  disqus를 추가해주고  shortname에  가입시 작성하였던 Website Name을 적어주시면 됩니다.&lt;/p&gt;
 
@@ -422,12 +545,15 @@ comments:
 		
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/disque5.png&quot; alt=&quot;DisQue 세팅&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/disque5.png&quot; alt=&quot;DisQue 세팅&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;step-9-구글-검색-가능하게-하기&quot;&gt;Step 9: 구글 검색 가능하게 하기&lt;/h2&gt;
+
 &lt;p&gt;게시글에 대해 구글 검색이 가능하게 하고 싶다면 &lt;a href=&quot;https://search.google.com/search-console/about?hl=ko&amp;amp;utm_source=wmx&amp;amp;utm_medium=wmx-welcome&quot; target=&quot;_blank&quot;&gt;Google Search Console&lt;/a&gt;을 통해 등록을  진행해야 합니다.  좌측은 구매한 도메인이 있을때 사용하며 하나의 도메인 등록을 통해 모든 서브도메인을 통합 관리하는 방식입니다. 우측(URL prefix)은 일반적인 GitBlog일 때입니다. 우선 우측 URL prefix 방식을 통해 먼저 진행하겠습니다. URL에  http://7271kim.github.io/ 통째로 적습니다.
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/google-regist.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/google-regist2.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist2.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;이제 블로그 도메인에 대한 소유권 인증을 진행해야 합니다. 사이트에 소유권자만이 구글 검색에 대해 허가를 내줄 수 있기 때문입니다. 소유권 확인을 위한 html파일을 다운로드 한 후 index.html페이지 위치에 올린 후 push합니다. 정상적으로 push가 되었다면 이제 Verify 혹은 확인 버튼을 클릭하여 소유권 인증을 마무리합니다. 아직은 아무 정보가 없어 웹사이트 유입현황이나 정보를 취득하지 못합니다. 물론 검색도 되지 않습니다. 구글 검색 엔진이 웹사이트를 읽어가는 작업이 진행되어야 검색이 노출되는데 이를 크롤링이라 합니다. 정상적인 크롤링을 위해서는 sitemap.xml과 robots.txt이 필요합니다.&lt;/p&gt;
 
@@ -472,28 +598,30 @@ Disallow: /hello/&lt;br /&gt;&lt;br /&gt;
 
 &lt;h3 id=&quot;google에-sitemapxml등록&quot;&gt;Google에 sitemap.xml등록&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://search.google.com/search-console&quot; target=&quot;_blank&quot;&gt;Google Search Console&lt;/a&gt;페이지 메뉴 중 sitemaps에 들어가서 생성한 sitemap.xml을 제출합니다. 
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/google-regist6.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist6.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p class=&quot;notice--danger&quot;&gt;&lt;strong&gt;Please Note:&lt;/strong&gt; sitemap까지 등록되었다면 검색 노출까지 일주일 정도 기간이 걸린다고 합니다.&lt;/p&gt;
 
 &lt;p&gt;이제 좌측 도메인 등록방법을 설명하겠습니다.  http를 제외한 도메인 주소를 작성합니다. 필자의 도메인 주소인 honbabzone.com을 적어준 후 TXT를 얻습니다.&lt;br /&gt;&lt;br /&gt;
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/google-regist3.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/google-regist4.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist3.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist4.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;해당 텍스트를 도메인 설정에 등록합니다. 
-&lt;img src=&quot;http://localhost:4000//assets/images/post/jekyll/google-regist5.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist5.png&quot; alt=&quot;Google세팅&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;10분정도 시간이 지난 후 도메인 소유권 확인을 누르면 도메인 인증이 됩니다.&lt;/p&gt;
 
 &lt;p class=&quot;notice--info&quot;&gt;이상으로 블로그를 처음 시작하시는 분들에게 도움이 되었길 바라며 GitBlog 시작하기에 대한 포스팅을 마치겠습니다. 감사합니다.&lt;/p&gt;
 
-&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://honbabzone.com/jekyll/start-gitHubBlog/&quot;&gt;https://honbabzone.com/jekyll/start-gitHubBlog/&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">First Step of Github Blog</summary></entry><entry><title type="html">Pros &amp;amp; Cons of using Github Blog</title><link href="http://localhost:4000/pros-and-cons-using-github-blog/" rel="alternate" type="text/html" title="Pros &amp; Cons of using Github Blog" /><published>2020-08-23T00:00:00+09:00</published><updated>2020-08-23T00:00:00+09:00</updated><id>http://localhost:4000/pros-and-cons-using-github-blog</id><content type="html" xml:base="http://localhost:4000/pros-and-cons-using-github-blog/">&lt;h1 id=&quot;목차&quot;&gt;&lt;strong&gt;목차&lt;/strong&gt;&lt;/h1&gt;
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://honbabzone.com/jekyll/start-gitHubBlog/&quot;&gt;https://honbabzone.com/jekyll/start-gitHubBlog/&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">First Step of Github Blog</summary></entry><entry><title type="html">Pros &amp;amp; Cons of using Github Blog</title><link href="http://localhost:4000/pros-and-cons-using-github-blog/" rel="alternate" type="text/html" title="Pros &amp; Cons of using Github Blog" /><published>2020-08-23T00:00:00+09:00</published><updated>2020-08-23T00:00:00+09:00</updated><id>http://localhost:4000/pros-and-cons-using-github-blog</id><content type="html" xml:base="http://localhost:4000/pros-and-cons-using-github-blog/">&lt;h1 id=&quot;pros--cons-of-using-github-blog&quot;&gt;Pros &amp;amp; Cons of using Github Blog&lt;/h1&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;블로그-만들기-github-총정리&quot;&gt;블로그 만들기 GitHub 총정리&lt;/h2&gt;
+&lt;h3 id=&quot;목차&quot;&gt;목차&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;블로그 만들기 GitHub 총정리&lt;/li&gt;
@@ -506,7 +634,7 @@ Disallow: /hello/&lt;br /&gt;&lt;br /&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;이-글에서는-왜-github-pages를-사용하면-어떤점이-좋은지-활용하는-방법은-어떤것들이-있는지를-공유한다&quot;&gt;이 글에서는 왜 &lt;a href=&quot;https://help.github.com/articles/what-is-github-pages/&quot;&gt;GitHub Pages&lt;/a&gt;를 사용하면 어떤점이 좋은지, 활용하는 방법은 어떤것들이 있는지를 공유한다.&lt;/h2&gt;
+&lt;h3 id=&quot;이-글에서는-왜-github-pages를-사용하면-어떤점이-좋은지-활용하는-방법은-어떤것들이-있는지를-공유한다&quot;&gt;이 글에서는 왜 &lt;a href=&quot;https://help.github.com/articles/what-is-github-pages/&quot;&gt;GitHub Pages&lt;/a&gt;를 사용하면 어떤점이 좋은지, 활용하는 방법은 어떤것들이 있는지를 공유한다.&lt;/h3&gt;
 &lt;p&gt;GitHub Pages는 GitHub저장소의 내용을 호스팅해주기 때문에 및 웹서버 설치없이 공짜로 블로그를 쉽게 만들수 있다.
 원래 Git은 소스코드의 변경사항을 관리해주는 툴인데 온라인으로 소스코드를 관리할 수 있게 서비스해주는 곳이 GitHub이다.&lt;/p&gt;
 
@@ -514,7 +642,7 @@ Disallow: /hello/&lt;br /&gt;&lt;br /&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;그-이유는-다음과-같이-추려볼-수-있다&quot;&gt;그 이유는 다음과 같이 추려볼 수 있다.&lt;/h2&gt;
+&lt;h3 id=&quot;그-이유는-다음과-같이-추려볼-수-있다&quot;&gt;그 이유는 다음과 같이 추려볼 수 있다.&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -559,7 +687,7 @@ Disallow: /hello/&lt;br /&gt;&lt;br /&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;사용하기-꺼려하는-이유&quot;&gt;사용하기 꺼려하는 이유&lt;/h2&gt;
+&lt;h3 id=&quot;사용하기-꺼려하는-이유&quot;&gt;사용하기 꺼려하는 이유&lt;/h3&gt;
 
 &lt;p&gt;이런 장점에도 불구하고 사용하기 꺼려하는 이유가 있는데 다음과 같다.&lt;/p&gt;
 
@@ -601,7 +729,7 @@ Admin패널처럼 이용하려면&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;결론&quot;&gt;결론&lt;/h2&gt;
+&lt;h3 id=&quot;결론&quot;&gt;결론&lt;/h3&gt;
 
 &lt;p&gt;개인적으로 활용해본 결과 동적 플랫폼으로 만들어 놓은 사이트는 구축및 운영에서 힘들었는데&lt;/p&gt;
 
@@ -611,7 +739,7 @@ Admin패널처럼 이용하려면&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h5 id=&quot;reference&quot;&gt;Reference&lt;/h5&gt;
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
 
 &lt;p&gt;블로그 만들기 GitHub 편 총정리
 (https://blog.chulgil.me/how-to-make-blog-using-github/) - Chulgil.Lee&lt;/p&gt;</content><author><name></name></author><summary type="html">Pros &amp; Cons of using Github Blog</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-06-27T00:00:00+09:00</published><updated>2019-06-27T00:00:00+09:00</updated><id>http://localhost:4000/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
