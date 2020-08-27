@@ -8,11 +8,11 @@ excerpt: Pros & Cons of using Github Blog # 7 - excpert of post
 imageminiature: https://picsum.photos/id/993/400/300 # 9 - image of index
 ---
 
-# **목차**
+# Pros & Cons of using Github Blog
 
 ---
 
-## 블로그 만들기 GitHub 총정리
+### 목차
 
 * 블로그 만들기 GitHub 총정리
 * [블로그 만들기 GitHub 기본 1편 - 사용자 페이지](https://blog.chulgil.me/how-to-make-blog-using-github-1/)
@@ -25,17 +25,15 @@ imageminiature: https://picsum.photos/id/993/400/300 # 9 - image of index
 ---
 
 
-## 이 글에서는 왜 [GitHub Pages](https://help.github.com/articles/what-is-github-pages/)를 사용하면 어떤점이 좋은지, 활용하는 방법은 어떤것들이 있는지를 공유한다.
+### 이 글에서는 왜 [GitHub Pages](https://help.github.com/articles/what-is-github-pages/)를 사용하면 어떤점이 좋은지, 활용하는 방법은 어떤것들이 있는지를 공유한다.
 GitHub Pages는 GitHub저장소의 내용을 호스팅해주기 때문에 및 웹서버 설치없이 공짜로 블로그를 쉽게 만들수 있다.
 원래 Git은 소스코드의 변경사항을 관리해주는 툴인데 온라인으로 소스코드를 관리할 수 있게 서비스해주는 곳이 GitHub이다.
 
 최근 나를 포함한 많은 개발자들이 정적 사이트로 블로그를 발행하고 있다.
 
-
 ---
 
-
-## 그 이유는 다음과 같이 추려볼 수 있다.
+### 그 이유는 다음과 같이 추려볼 수 있다.
 
 1.  블로그를 운영하다가 트래픽 증가로 인한 서버관리를 지속하기가 힘들다.
 
@@ -62,7 +60,6 @@ GitHub Pages는 GitHub저장소의 내용을 호스팅해주기 때문에 및 �
 
 ---
 
-
 확실히 개인 블로그로만 활용한다고 하면 이렇게 효율성 좋은 서비스는 찾아보기 어렵다.
 글을 작성하는 사람이 본인이기 때문에 로그인인증도 필요없고 내가 글을 작성하는 시점에 웹에 보여지기만 하면 되는 것이기때문에 동적인 플랫폼을 사용하는 것보다 본래의 HTML을 제공한다면 관리하기도 쉽다. 게다가 루비기반으로 만들어진 Jekyll과 같은 사이트생성기를 사용하면 Header와 Footer같이 반복되는 페이지들도 split할수가 있다.
 
@@ -70,7 +67,8 @@ GitHub Pages는 GitHub저장소의 내용을 호스팅해주기 때문에 및 �
 ---
 
 
-## 사용하기 꺼려하는 이유
+
+### 사용하기 꺼려하는 이유
 
 이런 장점에도 불구하고 사용하기 꺼려하는 이유가 있는데 다음과 같다.
 
@@ -100,7 +98,7 @@ Admin패널처럼 이용하려면
 
 ---
 
-## 결론
+### 결론
 
 개인적으로 활용해본 결과 동적 플랫폼으로 만들어 놓은 사이트는 구축및 운영에서 힘들었는데
 
@@ -108,11 +106,9 @@ Github Pages와 같은 정적사이트호스팅을 이용하면 설치도 쉬웠
 
 웹사이트 관리 및 운영이슈는 딱히 없어서 편했기 때문에 블로그를 시작하시는 분들에게 적극 추천드린다.
 
-
 ---
 
-
-##### Reference
+### Reference
 
 블로그 만들기 GitHub 편 총정리
 (https://blog.chulgil.me/how-to-make-blog-using-github/) - Chulgil.Lee
