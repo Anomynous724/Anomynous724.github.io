@@ -2,7 +2,7 @@
 layout: post # 1 - layout of this post
 title: "How to move a full Git repository with Commit history" # 2 - title of post
 date: 27/08/2020 # 3 - date of post
-categories: Github Commit Repository # 4 - Categories of post
+categories: Github Commit Repository Scrap # 4 - Categories of post
 description: How to move a full Git repository with Commit history # 6 - description post
 excerpt: How to move a full Git repository with Commit history # 7 - excpert of post
 imageminiature: https://picsum.photos/id/993/400/300 # 9 - image of inde
