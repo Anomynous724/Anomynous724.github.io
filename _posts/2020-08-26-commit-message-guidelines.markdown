@@ -2,7 +2,7 @@
 layout: post # 1 - layout of this post
 title: "Commit Message Guidelines" # 2 - title of post
 date: 26/08/2020 # 3 - date of post
-categories: Github Commit Guidelines # 4 - Categories of post
+categories: Github Commit Guidelines Scrap # 4 - Categories of post
 description: Commit Message Guidelines # 6 - description post
 excerpt: Commit Message Guidelines # 7 - excpert of post
 imageminiature: https://picsum.photos/id/993/400/300 # 9 - image of inde
