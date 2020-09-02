@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-01T16:12:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">V’s blog</title><subtitle>JS</subtitle><entry><title type="html">Pros &amp;amp; Cons of each Blog platforms</title><link href="http://localhost:4000/pros-and-cons-of-each-blog-platforms/" rel="alternate" type="text/html" title="Pros &amp; Cons of each Blog platforms" /><published>2020-09-01T00:00:00+09:00</published><updated>2020-09-01T00:00:00+09:00</updated><id>http://localhost:4000/pros-and-cons-of-each-blog-platforms</id><content type="html" xml:base="http://localhost:4000/pros-and-cons-of-each-blog-platforms/">&lt;p&gt;나는 게으른 사람이다. 그래도 가끔은 기록을 하려 블로그를 운영했었다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-02T14:22:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">J’s blog</title><subtitle>You Can Call Me J</subtitle><entry><title type="html">Pros &amp;amp; Cons of each Blog platforms</title><link href="http://localhost:4000/pros-and-cons-of-each-blog-platforms/" rel="alternate" type="text/html" title="Pros &amp; Cons of each Blog platforms" /><published>2020-09-01T00:00:00+09:00</published><updated>2020-09-01T00:00:00+09:00</updated><id>http://localhost:4000/pros-and-cons-of-each-blog-platforms</id><content type="html" xml:base="http://localhost:4000/pros-and-cons-of-each-blog-platforms/">&lt;p&gt;나는 게으른 사람이다. 그래도 가끔은 기록을 하려 블로그를 운영했었다.&lt;/p&gt;
 
 &lt;p&gt;2013년까지는 티스토리를 썼었고&lt;/p&gt;
 
@@ -163,7 +163,7 @@ Code Highlighting 이 되지 않아 샘플 코드를 첨부할때 되게 못나�
 
 &lt;p&gt;현재 내가 연결되어있는 Git을 보려면 git remote 를 터미널창에 입력해주세요.&lt;/p&gt;
 
-&lt;p&gt;자세히 보고싶으시다면 &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote -v&lt;/code&gt;를 입력해주세요.&lt;/p&gt;
+&lt;p&gt;자세히 보고싶으시다면 &lt;code class=&quot;language-html highlighter-rouge&quot;&gt;git remote -v&lt;/code&gt;를 입력해주세요.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/27/2020-08-27-how-to-move-a-full-git-repository-with-commit-history/01. Type git remote -v.png&quot; alt=&quot;img&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
@@ -171,7 +171,7 @@ Code Highlighting 이 되지 않아 샘플 코드를 첨부할때 되게 못나�
 
 &lt;p&gt;원하시는 방법으로 현재 제 저장소의 https주소를 복사했다면, 밑의 커맨드라인에서 주소부분만 바꾸어 터미널창에 입력해주세요.&lt;/p&gt;
 
-&lt;p&gt;​	&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone --mirror https://example.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;​	&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;git clone --mirror https://example.git&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/27/2020-08-27-how-to-move-a-full-git-repository-with-commit-history/02. Type git clone --mirror.png&quot; alt=&quot;img&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
@@ -189,7 +189,7 @@ Code Highlighting 이 되지 않아 샘플 코드를 첨부할때 되게 못나�
 
 &lt;p&gt;그리고 우리가 옮길 &lt;strong&gt;새로운 저장소의 https주소&lt;/strong&gt;를 복사해주고,&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git remote set-url --push origin https://example&lt;/code&gt;을 터미널창에 입력해주세요&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;git remote set-url --push origin https://example&lt;/code&gt;을 터미널창에 입력해주세요&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/27/2020-08-27-how-to-move-a-full-git-repository-with-commit-history/03. Type git remote set-url --push origin.png&quot; alt=&quot;img&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
@@ -199,7 +199,7 @@ Code Highlighting 이 되지 않아 샘플 코드를 첨부할때 되게 못나�
 
 &lt;p&gt;이제 마지막으로 push를 해야겠죠?&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git push --mirror&lt;/code&gt;를 터미널창에 입력해주세요.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;git push --mirror&lt;/code&gt;를 터미널창에 입력해주세요.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/27/2020-08-27-how-to-move-a-full-git-repository-with-commit-history/04. Type git push --mirror.png&quot; alt=&quot;img&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
@@ -254,9 +254,9 @@ single space. Use a hanging indent.&lt;/li&gt;
 
 &lt;h3 id=&quot;example-for-a-commit-message&quot;&gt;Example for a commit message&lt;/h3&gt;
 
-&lt;p&gt;​	&lt;code class=&quot;highlighter-rouge&quot;&gt;Add CPU arch filter scheduler support&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;​	&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;Add CPU arch filter scheduler support&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;​	&lt;code class=&quot;highlighter-rouge&quot;&gt;In a mixed environment of…&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;​	&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;In a mixed environment of…&lt;/code&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -303,15 +303,15 @@ single space. Use a hanging indent.&lt;/li&gt;
 
 &lt;p&gt;In header:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[#123] Refer to GitHub issue…
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;[#123] Refer to GitHub issue…
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CAT-123 Refer to Jira ticket with project identifier CAT…
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;CAT-123 Refer to Jira ticket with project identifier CAT…
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;In body:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;…
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;…
 Fixes #123, #124
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -370,11 +370,11 @@ Fixes #123, #124
 
 &lt;p&gt;Jekyll은 하나의 동적 객체 지향 스크립트 프로그래밍 언어인 Ruby로 작성되었기 때문에 로컬 개발 환경 세팅을 위해서는 Rubby 설치가 필요합니다. 필자는&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot; target=&quot;_blank&quot;&gt; https://rubyinstaller.org/downloads/ &lt;/a&gt;해당 사이트에서 2.5.7 버전으로 받아 설치하였습니다. 이제 minimal-mistakes테마를 다운받고 압축해제 하였던 폴더 위치로 이동합니다. 이 후 cmd창을 열어 아래 명령어를 차례로 실행합니다. 꼭 &lt;strong&gt;Gemfile&lt;/strong&gt;이 있는 위치에서 실행하여야 합니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# gem install bundler&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;# gem install bundler&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# bundle &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;# bundle &lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# jekyll serve&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;# jekyll serve&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/console.png&quot; alt=&quot;Ruby Setting 확인&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
@@ -389,7 +389,7 @@ Fixes #123, #124
 &lt;strong&gt;# gem uninstall { 충돌한 플러그인 명 } ( 특정 플러그인 삭제 명령어  )&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;이제 Git에 push를 진행하기 전에 압축 해제한 파일 중 불필요한 파일들을 삭제하겠습니다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.github
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;.github
 test
 .editorconfig
 .gitattributes
@@ -414,11 +414,11 @@ YAML :  &lt;a href=&quot;https://yaml.org/&quot; target=&quot;_blank&quot;&gt; h
 Liquid 문법 : &lt;a href=&quot;https://shopify.github.io/liquid/&quot; target=&quot;_blank&quot;&gt;https://shopify.github.io/liquid/ &lt;/a&gt; &lt;br /&gt;
 Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/structure/&quot; target=&quot;_blank&quot;&gt;https://jekyllrb-ko.github.io/docs/structure/ &lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# gem install bundler&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;# gem install bundler&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# bundle &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;# bundle &lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# jekyll serve&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;# jekyll serve&lt;/code&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -429,7 +429,7 @@ Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/struc
 &lt;p&gt;지킬 테마에서 자신의 블로그 페이지에 맞게 커스텀 하기위해 _config.yml 을 수정하였습니다.  웹에대한 기본 지식이 있다면 어디를 수정하면 어디가 반영 될 지 직관적으로 알 수 있게 되어있습니다.  꼭 수정해 주어야 하는 부분만 포스팅 하고 이 외 수정한 부분은 아래 주소에서 확인하시기 바랍니다.
 &lt;a href=&quot;https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml&quot; target=&quot;_blank&quot;&gt;https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;
 
 &lt;span class=&quot;n&quot;&gt;minimal_mistakes_skin&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;default&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;태마&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;색&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;설정&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;air&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;aqua&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;contrast&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;dark&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;dirt&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;neon&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;mint&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;plum&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;sunrise&quot;&lt;/span&gt; 
 
@@ -535,7 +535,7 @@ Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/struc
 &lt;p&gt;원하는 네비게이션 url을 설정해 줍니다. http://naver.com과 같이 상대경로가 아닌 절대경로도 가능합니다. 
 &lt;a href=&quot;https://github.com/7271kim/7271kim.github.com/blob/master/_data/navigation.yml&quot; target=&quot;_blank&quot;&gt;https://github.com/7271kim/7271kim.github.com/blob/master/_data/navigation.yml&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;main:&lt;/span&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;main:&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;title:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Categories&quot;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;url:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;title:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Tags&quot;&lt;/span&gt;
@@ -552,7 +552,7 @@ Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/struc
 &lt;br /&gt;
 &lt;strong&gt;category-archive.md에 대한 예시&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
 &lt;span class=&quot;nl&quot;&gt;title:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Posts by Category&quot;&lt;/span&gt;
 &lt;span class=&quot;nl&quot;&gt;layout:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;
 &lt;span class=&quot;nl&quot;&gt;permalink:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
@@ -565,7 +565,7 @@ Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/struc
 &lt;p&gt;하단 defaults: 부분에 _pages 부분을 추가합니다. 
 &lt;a href=&quot;https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml&quot; target=&quot;_blank&quot;&gt;https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;defaults:&lt;/span&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;defaults:&lt;/span&gt;
   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_posts&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;scope:&lt;/span&gt;
       &lt;span class=&quot;nl&quot;&gt;path:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
@@ -598,13 +598,13 @@ Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/struc
 &lt;a href=&quot;https://github.com/7271kim/7271kim.github.com/blob/master/package.json&quot; target=&quot;_blank&quot;&gt;https://github.com/7271kim/7271kim.github.com/blob/master/package.json&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;① devDependencies안에 해당 내용을 추가합니다.&lt;/p&gt;
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;: &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;: &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;② scripts에 하위 내용 추가&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;watchDev:js&quot;: &quot;onchange \&quot;assets/js/**/*.js\&quot; -e \&quot;assets/js/main.min.js\&quot; -- npm run buildDev:js&quot;,
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&quot;watchDev:js&quot;: &quot;onchange \&quot;assets/js/**/*.js\&quot; -e \&quot;assets/js/main.min.js\&quot; -- npm run buildDev:js&quot;,
 &quot;concat-js&quot;: &quot;concat -o assets/js/main.min.js (요약)... assets/js/custom/custom.js(추가부분)&quot;,
-&quot;buildDev:js&quot;: &quot;npm run concat-js &amp;amp;&amp;amp; npm run add-banner&quot;
+&quot;buildDev:js&quot;: &quot;npm run concat-js &lt;span class=&quot;err&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; npm run add-banner&quot;
 &quot;uglify&quot;: &quot;uglifyjs (요약)... assets/js/custom/custom.js -c -m -o assets/js/main.min.js(추가 부분)&quot;,
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -612,19 +612,19 @@ Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/struc
 &lt;p&gt;package.json이 존재하는 위치에서 해당 명령어를 실행 하면 현재 /assets/js/ 아래에 있는 js파일들이 main.min.js에 합쳐서 나옵니다. uglifyjs 옵션에 대해 더 알고자 한다면 아래 문서를 참고하시면 됩니다.
 &lt;a href=&quot;http://fibjs.org/ko/docs/awesome/module/uglify-js.md.html&quot; target=&quot;_blank&quot;&gt;http://fibjs.org/ko/docs/awesome/module/uglify-js.md.html&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# npm install
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;# npm install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;개발시&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# npm run watchDev:js
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;# npm run watchDev:js
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;배포시&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# npm run build:js
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;# npm run build:js
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;scss설정&quot;&gt;SCSS설정&lt;/h3&gt;
 &lt;p&gt;scss문법을 설명하지 않겠습니다. 다만 “/_sass/custom” 위치에 원하는 폴더 및 SCSS파일을 만들고 /_sass/minimal-mistakes.scss 파일 하단에 @import “custom/_cunstomcss”; 같이 작성 한다면 자동으로 컴파일하여 _site/assets/css/main.css으로 들어가게 됩니다.
 &lt;a href=&quot;https://github.com/7271kim/7271kim.github.com/blob/master/_sass/minimal-mistakes.scss&quot; target=&quot;_blank&quot;&gt;https://github.com/7271kim/7271kim.github.com/blob/master/_sass/minimal-mistakes.scss&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* Custom */&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* Custom */&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;custom/_cunstomcss&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -634,10 +634,10 @@ Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/struc
 
 &lt;p&gt;게시글을  md문법으로 작성하면 되지만 뭔가 불편하여 찾아보니 admin페이지를 통해 쉽게 게시글을 작성할 수 있다는 것을 알게 되어 방법을 공유합니다. 세팅하는 방법은 간단합니다. Gemfile파일 안에 해당 부분을 작성합니다. 
 &lt;a href=&quot;https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile&quot; target=&quot;_blank&quot;&gt;https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem 'jekyll-admin', group: :jekyll_plugins
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;gem 'jekyll-admin', group: :jekyll_plugins
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;cmd창에서 해당 명령어 실행합니다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# bundle install
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;# bundle install
 # jekyll serve 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;이제  &lt;a href=&quot;http://localhost:4000/admin/&quot; target=&quot;_blank&quot;&gt;http://localhost:4000/admin/&lt;/a&gt; 으로 접근 가능하며 게시물을 쉽게 작성하고 수정할 수 있습니다.&lt;/p&gt;
@@ -680,7 +680,7 @@ Jekyll 폴더구조 :  &lt;a href=&quot;https://jekyllrb-ko.github.io/docs/struc
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml&quot; target=&quot;_blank&quot;&gt;https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 댓글 관련 부분
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;# 댓글 관련 부분
 comments:
   provider               : &quot;disqus&quot; # false (default), &quot;disqus&quot;, &quot;discourse&quot;, &quot;facebook&quot;, &quot;staticman&quot;, &quot;staticman_v2&quot;, &quot;utterances&quot;, &quot;custom&quot;
   disqus:
@@ -712,10 +712,10 @@ sitemap.xml은 정해진 양식으로 제작되어야 하고, 이 양식은 대�
 &lt;h3 id=&quot;sitemapxml-생성&quot;&gt;sitemap.xml 생성&lt;/h3&gt;
 &lt;p&gt;sitemap.xml을 수동으로 작성하기보단 jekyll-sitemap 플러그인 통해서 관리하는 방법을 알아보겠습니다. 우선 Gemfile에 하단부분을 적어줍니다. 
 &lt;a href=&quot;https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile&quot; target=&quot;_blank&quot;&gt;https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem 'jekyll-sitemap'
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;gem 'jekyll-sitemap'
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;이제 cmd창에서 bundle install 명령어를 통해 플러그인 설치를 진행하고 서버를 시작합니다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# bundle install
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;# bundle install
 # jekyll serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;정상적으로 설치가 되었다면 아래와 같이 접근 가능합니다. &lt;br /&gt;
@@ -725,7 +725,7 @@ sitemap.xml은 정해진 양식으로 제작되어야 하고, 이 양식은 대�
 &lt;h3 id=&quot;robotstxt-생성&quot;&gt;robots.txt 생성&lt;/h3&gt;
 &lt;p&gt;이제 index.html위치에 robots.txt파일을 생성하고 아래에 내용을 작성합니다.
 &lt;a href=&quot;https://github.com/7271kim/7271kim.github.com/blob/master/robots.txt&quot; target=&quot;_blank&quot;&gt;https://github.com/7271kim/7271kim.github.com/blob/master/robots.txt&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;User-agent: *
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;User-agent: *
 Allow: /
 
 Sitemap: https://7271kim.github.io/sitemap.xml
@@ -885,9 +885,9 @@ Admin패널처럼 이용하려면&lt;/p&gt;
 &lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
 
 &lt;p&gt;블로그 만들기 GitHub 편 총정리
-(https://blog.chulgil.me/how-to-make-blog-using-github/) - Chulgil.Lee&lt;/p&gt;</content><author><name></name></author><summary type="html">Pros &amp; Cons of using Github Blog</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-06-27T00:00:00+09:00</published><updated>2019-06-27T00:00:00+09:00</updated><id>http://localhost:4000/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+(https://blog.chulgil.me/how-to-make-blog-using-github/) - Chulgil.Lee&lt;/p&gt;</content><author><name></name></author><summary type="html">Pros &amp; Cons of using Github Blog</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-06-27T00:00:00+09:00</published><updated>2019-06-27T00:00:00+09:00</updated><id>http://localhost:4000/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-html highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-html highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-html highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-html highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
 &lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
@@ -916,9 +916,9 @@ Admin패널처럼 이용하려면&lt;/p&gt;
 
 &lt;p&gt;And this is &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;This is code&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;This is code&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is a 
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;This is a 
 piece of code 
 in a block
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -979,7 +979,7 @@ in a block
 
 &lt;p&gt;Syntax highlighting&lt;/p&gt;
 
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;

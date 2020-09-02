@@ -7,8 +7,8 @@
     <!-- 1 - get google site verification code -->
     <meta name="google-site-verification" content="" />
     <link href="https://fonts.googleapis.com/css?family=Roboto|Lobster|Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/app.min.css?v=20200901161301">
-    <script src="http://localhost:4000/assets/js/app.min.js?v=20200901161301"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/app.min.css?v=20200902142233">
+    <script src="http://localhost:4000/assets/js/app.min.js?v=20200902142233"></script>
     <link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/assets/images/favicon.png">
     <!-- 2 - get google analitycs id -->
     <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
@@ -22,7 +22,7 @@
     </script>
     <!-- 3 - plugin seo jekyll -->
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>First Step of Github Blog | V’s blog</title>
+<title>First Step of Github Blog | J’s blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="First Step of Github Blog" />
 <meta property="og:locale" content="en_US" />
@@ -30,7 +30,7 @@
 <meta property="og:description" content="First Step of Github Blog" />
 <link rel="canonical" href="http://localhost:4000/first-step-of-github-blog/" />
 <meta property="og:url" content="http://localhost:4000/first-step-of-github-blog/" />
-<meta property="og:site_name" content="V’s blog" />
+<meta property="og:site_name" content="J’s blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-08-25T00:00:00+09:00" />
 <script type="application/ld+json">
@@ -193,11 +193,11 @@
 
 <p>Jekyll은 하나의 동적 객체 지향 스크립트 프로그래밍 언어인 Ruby로 작성되었기 때문에 로컬 개발 환경 세팅을 위해서는 Rubby 설치가 필요합니다. 필자는<a href="https://rubyinstaller.org/downloads/" target="_blank"> https://rubyinstaller.org/downloads/ </a>해당 사이트에서 2.5.7 버전으로 받아 설치하였습니다. 이제 minimal-mistakes테마를 다운받고 압축해제 하였던 폴더 위치로 이동합니다. 이 후 cmd창을 열어 아래 명령어를 차례로 실행합니다. 꼭 <strong>Gemfile</strong>이 있는 위치에서 실행하여야 합니다.</p>
 
-<p><code class="highlighter-rouge"># gem install bundler</code></p>
+<p><code class="language-html highlighter-rouge"># gem install bundler</code></p>
 
-<p><code class="highlighter-rouge"># bundle </code></p>
+<p><code class="language-html highlighter-rouge"># bundle </code></p>
 
-<p><code class="highlighter-rouge"># jekyll serve</code></p>
+<p><code class="language-html highlighter-rouge"># jekyll serve</code></p>
 
 <p><img src="http://localhost:4000//assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/console.png" alt="Ruby Setting 확인" class="align-center" /></p>
 
@@ -212,7 +212,7 @@
 <strong># gem uninstall { 충돌한 플러그인 명 } ( 특정 플러그인 삭제 명령어  )</strong><br /></p>
 
 <p>이제 Git에 push를 진행하기 전에 압축 해제한 파일 중 불필요한 파일들을 삭제하겠습니다.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.github
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>.github
 test
 .editorconfig
 .gitattributes
@@ -237,11 +237,11 @@ YAML :  <a href="https://yaml.org/" target="_blank"> https://yaml.org/ </a> <br 
 Liquid 문법 : <a href="https://shopify.github.io/liquid/" target="_blank">https://shopify.github.io/liquid/ </a> <br />
 Jekyll 폴더구조 :  <a href="https://jekyllrb-ko.github.io/docs/structure/" target="_blank">https://jekyllrb-ko.github.io/docs/structure/ </a> <br /></p>
 
-<p><code class="highlighter-rouge"># gem install bundler</code></p>
+<p><code class="language-html highlighter-rouge"># gem install bundler</code></p>
 
-<p><code class="highlighter-rouge"># bundle </code></p>
+<p><code class="language-html highlighter-rouge"># bundle </code></p>
 
-<p><code class="highlighter-rouge"># jekyll serve</code></p>
+<p><code class="language-html highlighter-rouge"># jekyll serve</code></p>
 
 <hr />
 
@@ -252,7 +252,7 @@ Jekyll 폴더구조 :  <a href="https://jekyllrb-ko.github.io/docs/structure/" t
 <p>지킬 테마에서 자신의 블로그 페이지에 맞게 커스텀 하기위해 _config.yml 을 수정하였습니다.  웹에대한 기본 지식이 있다면 어디를 수정하면 어디가 반영 될 지 직관적으로 알 수 있게 되어있습니다.  꼭 수정해 주어야 하는 부분만 포스팅 하고 이 외 수정한 부분은 아래 주소에서 확인하시기 바랍니다.
 <a href="https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml" target="_blank">https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml</a></p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="syntax"><code>
 
 <span class="n">minimal_mistakes_skin</span>    <span class="o">:</span> <span class="s">"default"</span> <span class="err">#</span> <span class="err">태마</span> <span class="err">색</span> <span class="err">설정</span> <span class="s">"air"</span><span class="o">,</span> <span class="s">"aqua"</span><span class="o">,</span> <span class="s">"contrast"</span><span class="o">,</span> <span class="s">"dark"</span><span class="o">,</span> <span class="s">"dirt"</span><span class="o">,</span> <span class="s">"neon"</span><span class="o">,</span> <span class="s">"mint"</span><span class="o">,</span> <span class="s">"plum"</span><span class="o">,</span> <span class="s">"sunrise"</span> 
 
@@ -358,7 +358,7 @@ Jekyll 폴더구조 :  <a href="https://jekyllrb-ko.github.io/docs/structure/" t
 <p>원하는 네비게이션 url을 설정해 줍니다. http://naver.com과 같이 상대경로가 아닌 절대경로도 가능합니다. 
 <a href="https://github.com/7271kim/7271kim.github.com/blob/master/_data/navigation.yml" target="_blank">https://github.com/7271kim/7271kim.github.com/blob/master/_data/navigation.yml</a></p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">main:</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="syntax"><code><span class="nl">main:</span>
   <span class="o">-</span> <span class="nl">title:</span> <span class="s">"Categories"</span>
     <span class="nl">url:</span> <span class="o">/</span><span class="n">categories</span><span class="o">/</span>
   <span class="o">-</span> <span class="nl">title:</span> <span class="s">"Tags"</span>
@@ -375,7 +375,7 @@ Jekyll 폴더구조 :  <a href="https://jekyllrb-ko.github.io/docs/structure/" t
 <br />
 <strong>category-archive.md에 대한 예시</strong></p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">---</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="syntax"><code><span class="o">---</span>
 <span class="nl">title:</span> <span class="s">"Posts by Category"</span>
 <span class="nl">layout:</span> <span class="n">categories</span>
 <span class="nl">permalink:</span> <span class="o">/</span><span class="n">categories</span><span class="o">/</span>
@@ -388,7 +388,7 @@ Jekyll 폴더구조 :  <a href="https://jekyllrb-ko.github.io/docs/structure/" t
 <p>하단 defaults: 부분에 _pages 부분을 추가합니다. 
 <a href="https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml" target="_blank">https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml</a></p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">defaults:</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="syntax"><code><span class="nl">defaults:</span>
   <span class="err">#</span> <span class="n">_posts</span>
   <span class="o">-</span> <span class="nl">scope:</span>
       <span class="nl">path:</span> <span class="s">""</span>
@@ -421,13 +421,13 @@ Jekyll 폴더구조 :  <a href="https://jekyllrb-ko.github.io/docs/structure/" t
 <a href="https://github.com/7271kim/7271kim.github.com/blob/master/package.json" target="_blank">https://github.com/7271kim/7271kim.github.com/blob/master/package.json</a> <br /></p>
 
 <p>① devDependencies안에 해당 내용을 추가합니다.</p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">concat</span><span class="s">": "</span><span class="o">^</span><span class="mf">1.0</span><span class="o">.</span><span class="mi">3</span><span class="err">"</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="syntax"><code><span class="n">concat</span><span class="s">": "</span><span class="o">^</span><span class="mf">1.0</span><span class="o">.</span><span class="mi">3</span><span class="err">"</span>
 </code></pre></div></div>
 
 <p>② scripts에 하위 내용 추가</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"watchDev:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run buildDev:js",
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>"watchDev:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run buildDev:js",
 "concat-js": "concat -o assets/js/main.min.js (요약)... assets/js/custom/custom.js(추가부분)",
-"buildDev:js": "npm run concat-js &amp;&amp; npm run add-banner"
+"buildDev:js": "npm run concat-js <span class="err">&amp;&amp;</span> npm run add-banner"
 "uglify": "uglifyjs (요약)... assets/js/custom/custom.js -c -m -o assets/js/main.min.js(추가 부분)",
 </code></pre></div></div>
 
@@ -435,19 +435,19 @@ Jekyll 폴더구조 :  <a href="https://jekyllrb-ko.github.io/docs/structure/" t
 <p>package.json이 존재하는 위치에서 해당 명령어를 실행 하면 현재 /assets/js/ 아래에 있는 js파일들이 main.min.js에 합쳐서 나옵니다. uglifyjs 옵션에 대해 더 알고자 한다면 아래 문서를 참고하시면 됩니다.
 <a href="http://fibjs.org/ko/docs/awesome/module/uglify-js.md.html" target="_blank">http://fibjs.org/ko/docs/awesome/module/uglify-js.md.html</a></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># npm install
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code># npm install
 </code></pre></div></div>
 <p><strong>개발시</strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># npm run watchDev:js
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code># npm run watchDev:js
 </code></pre></div></div>
 <p><strong>배포시</strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># npm run build:js
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code># npm run build:js
 </code></pre></div></div>
 
 <h3 id="scss설정">SCSS설정</h3>
 <p>scss문법을 설명하지 않겠습니다. 다만 “/_sass/custom” 위치에 원하는 폴더 및 SCSS파일을 만들고 /_sass/minimal-mistakes.scss 파일 하단에 @import “custom/_cunstomcss”; 같이 작성 한다면 자동으로 컴파일하여 _site/assets/css/main.css으로 들어가게 됩니다.
 <a href="https://github.com/7271kim/7271kim.github.com/blob/master/_sass/minimal-mistakes.scss" target="_blank">https://github.com/7271kim/7271kim.github.com/blob/master/_sass/minimal-mistakes.scss</a></p>
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Custom */</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="syntax"><code><span class="c">/* Custom */</span>
 <span class="k">@import</span> <span class="s1">"custom/_cunstomcss"</span><span class="p">;</span>
 </code></pre></div></div>
 
@@ -457,10 +457,10 @@ Jekyll 폴더구조 :  <a href="https://jekyllrb-ko.github.io/docs/structure/" t
 
 <p>게시글을  md문법으로 작성하면 되지만 뭔가 불편하여 찾아보니 admin페이지를 통해 쉽게 게시글을 작성할 수 있다는 것을 알게 되어 방법을 공유합니다. 세팅하는 방법은 간단합니다. Gemfile파일 안에 해당 부분을 작성합니다. 
 <a href="https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile" target="_blank">https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile</a></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'jekyll-admin', group: :jekyll_plugins
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>gem 'jekyll-admin', group: :jekyll_plugins
 </code></pre></div></div>
 <p>cmd창에서 해당 명령어 실행합니다.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># bundle install
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code># bundle install
 # jekyll serve 
 </code></pre></div></div>
 <p>이제  <a href="http://localhost:4000/admin/" target="_blank">http://localhost:4000/admin/</a> 으로 접근 가능하며 게시물을 쉽게 작성하고 수정할 수 있습니다.</p>
@@ -503,7 +503,7 @@ Jekyll 폴더구조 :  <a href="https://jekyllrb-ko.github.io/docs/structure/" t
 
 <p><a href="https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml" target="_blank">https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml</a></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 댓글 관련 부분
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code># 댓글 관련 부분
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -535,10 +535,10 @@ sitemap.xml은 정해진 양식으로 제작되어야 하고, 이 양식은 대�
 <h3 id="sitemapxml-생성">sitemap.xml 생성</h3>
 <p>sitemap.xml을 수동으로 작성하기보단 jekyll-sitemap 플러그인 통해서 관리하는 방법을 알아보겠습니다. 우선 Gemfile에 하단부분을 적어줍니다. 
 <a href="https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile" target="_blank">https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile</a></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'jekyll-sitemap'
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>gem 'jekyll-sitemap'
 </code></pre></div></div>
 <p>이제 cmd창에서 bundle install 명령어를 통해 플러그인 설치를 진행하고 서버를 시작합니다.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># bundle install
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code># bundle install
 # jekyll serve
 </code></pre></div></div>
 <p>정상적으로 설치가 되었다면 아래와 같이 접근 가능합니다. <br />
@@ -548,7 +548,7 @@ sitemap.xml은 정해진 양식으로 제작되어야 하고, 이 양식은 대�
 <h3 id="robotstxt-생성">robots.txt 생성</h3>
 <p>이제 index.html위치에 robots.txt파일을 생성하고 아래에 내용을 작성합니다.
 <a href="https://github.com/7271kim/7271kim.github.com/blob/master/robots.txt" target="_blank">https://github.com/7271kim/7271kim.github.com/blob/master/robots.txt</a></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User-agent: *
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>User-agent: *
 Allow: /
 
 Sitemap: https://7271kim.github.io/sitemap.xml
@@ -684,7 +684,7 @@ Disallow: /hello/<br /><br />
     <i class="fab fa-stack-overflow"></i>
 </a>
 
-<a href="https://github.com/Anomynous724?tab=repositories" target="_blank">
+<a href="https://github.com/YouCanCallMeJ" target="_blank">
     <i class="fab fa-github-square"></i>
 </a>
 
