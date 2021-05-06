@@ -1,0 +1,21 @@
+---
+layout: post # 1 - layout of this post
+title: "Diary-2021/05/07" # 2 - title of post
+date: 2021/05/07 # 3 - date of post
+categories: Github Tistory Diary # 4 - Categories of post
+description: Diary 2021-05-07 # 6 - description post
+excerpt:  # 7 - excpert of post
+imageminiature: https://picsum.photos/id/993/400/300 # 9 - image of inde
+---
+
+### 오늘 한일 2021-05-07
+
+* Docker 공부
+- container, docker run, 
+
+* Git bash CLI 명령어 공부
+- git clone (url)
+- git add .
+- git status
+
+---
