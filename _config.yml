@@ -1,94 +1,27 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+url: "https://youcancallmej.github.io/"
+baseurl: 
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: J's blog
+title: Junseo Yang
 email: jsy724724@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  You Can Call Me J
-url: "https://youcancallmej.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/" # the subpath of your site, e.g. /blog
+description: "Developer. Full Stack. Always Student."
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  #- title: twitter
+  #  url: http://twitter.com/jekyllrb
+  #- title: facebook
+  #  url:
+  - title: stack-overflow
+    url: https://stackoverflow.com/users/11965087/user11965087
+  - title: github
+    url: https://github.com/YouCanCallMeJ
+
+# Postal address (add as many lines as necessary)
+#address:
+#  - line: 3481 Melrose Place
+#  - line: Beverly Hills, CA 90210
 
 # Build settings
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    default_lang: html
-    css_class   : 'syntax'
-highlighter: rouge
-theme: gray
-permalink: /:title/
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-paginate
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-exclude: [
-  'Gemfile',
-  'Gemfile.lock',
-  'node_modules',
-  'Gemfile',
-  'gray.gemspec',
-  'Gulpfife.js',
-  'package.json',
-  'package-lock.json',
-  'LICENSE.txt',
-  'README.md',
-  'yarn.lock',
-  '.gitignore'
-]
-
-#number posts for paginate
-paginate: 20
-paginate_path: /page/:num
-locale: EN
-
-#new variables:
-
-#social newtworks
-facebookurl: ''
-twitterurl: ''
-youtubeurl: ''
-stackoverflowurl: ''
-githuburl: 'https://github.com/YouCanCallMeJ'
-instagramurl: ''
-
-#for analitycs
-idanalitycs: ''
-analytics:
-  provider               : "google-gtag" # 구글 어날리틱스 등록 false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : "UA-176960552-1"
-    anonymize_ip         : # true, false (default)
-
-#language site
-language: ''
-
-#google verification
-googleverify: ''
-
-#email formspree
-emailform: jsy724724@gmail.com
-
-#disqus
-disqus_user:
-
-#about-me
-aboutme: The overman... Who has organized the chaos of his passions, given style to his character, and become creative. Aware of life's terrors, he affirms life without resentment. - Fredrich Nietzche
-aboutmeimg: https://i.redd.it/3k7uvh8rz5k41.jpg
+permalink: pretty
