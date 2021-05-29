@@ -48,19 +48,21 @@
                 </div>
                 
                 <script type="text/javascript">
-                    var typed = new Typed('.typed', {
-                        // Waits 1000ms after typing "First"
-                        strings: [
-                            'Developer.',
-                            'Always Student.'
-                        ],
-                        smartBackspace: true,
-                        typeSpeed: 30,
-                        backSpeed: 30,
-                        backDelay: 1500,
-                        loop: true,
-                        loopCount: Infinity,
-                    });
+                    document.addEventListener("DOMContentLoaded", function(event) { 
+                        var typed = new Typed('.typed', {
+                            // Waits 1000ms after typing "First"
+                            strings: [
+                                'Developer.',
+                                'Always Student.'
+                            ],
+                            smartBackspace: true,
+                            typeSpeed: 30,
+                            backSpeed: 30,
+                            backDelay: 1500,
+                            loop: true,
+                            loopCount: Infinity,
+                        });
+                    });                    
                 </script>
 
                 <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>

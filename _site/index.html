@@ -29,27 +29,6 @@
     <![endif]-->
 </head>
 
-   <!-- jQuery Version 1.11.0 -->
-    <script src="/js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="/js/jquery.easing.min.js"></script>
-    <script src="/js/classie.js"></script>
-    <script src="/js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="/js/jqBootstrapValidation.js"></script>
-    <script src="/js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="/js/agency.js"></script>
-
-    <!-- Custom Typed JavaScript -->
-    <script src="/js/typed.min.js"></script>
-
     <body id="page-top" class="index">
 
     <!-- Navigation -->
@@ -102,20 +81,21 @@
                 </div>
                 
                 <script type="text/javascript">
-                    var typed = new Typed('.typed', {
-                        // Waits 1000ms after typing "First"
-                        strings: [
-                            'Developer.',
-                            'Always Student.'
-                        ],
-                        smartBackspace: true,
-                        typeSpeed: 30,
-                        backSpeed: 30,
-                        startDelay: 300,
-                        backDelay: 1000,
-                        loop: true,
-                        loopCount: Infinity,
-                    });
+                    document.addEventListener("DOMContentLoaded", function(event) { 
+                        var typed = new Typed('.typed', {
+                            // Waits 1000ms after typing "First"
+                            strings: [
+                                'Developer.',
+                                'Always Student.'
+                            ],
+                            smartBackspace: true,
+                            typeSpeed: 30,
+                            backSpeed: 30,
+                            backDelay: 1500,
+                            loop: true,
+                            loopCount: Infinity,
+                        });
+                    });                    
                 </script>
 
                 <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
@@ -416,6 +396,9 @@
                         <li><a href="https://github.com/YouCanCallMeJ" target="_blank"><i class="fa fa-github"></i></a>
                         </li>
                         
+                        <li><a href="https://www.linkedin.com/in/junseo-yang-8878a6210/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -661,7 +644,26 @@
     </div>
 
 
-    
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/agency.js"></script>
+
+    <!-- Custom Typed JavaScript -->
+    <script src="/js/typed.min.js"></script>
 
     </body>
 </html>
