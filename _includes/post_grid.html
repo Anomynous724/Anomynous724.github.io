@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             {% for post in site.posts %}
-            {% if post.category == "Post" %}
+            {% unless post.category == "Portfolio" %}
             <div class="col-md-4 col-sm-6 post-item">
                 <a href="#postModal{{ post.modal-id }}" class="post-link" data-toggle="modal">
                     <div class="post-hover">
@@ -24,11 +24,11 @@
                     <p class="text-muted">{{ post.subtitle }}</p>
                 </div>
             </div>
-            {% endif %}
+            {% endunless %}
             {% endfor %}
         </div>
         <div class="row text-center">
-            <a href="#" class="page-scroll btn btn-xl">Tell Me More</a>
+            <a href="/post_detail/" class="page-scroll btn btn-xl">Tell Me More</a>
         </div>
     </div>
 </section>
