@@ -8,8 +8,8 @@
             </div>
         </div>
         <div class="row">
-            {% for post in site.posts %}
-            {% if post.category == "Portfolio" %}
+            {% assign portfolios = site.posts | where_exp: "post", "post.category contains 'Portfolio'" %}
+            {% for post in portfolios limit:6 %}
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
@@ -24,7 +24,6 @@
                     <p class="text-muted">{{ post.subtitle }}</p>
                 </div>
             </div>
-            {% endif %}
             {% endfor %}
             <div class="row text-center">
                 <a href="/portfolio_detail/" class="page-scroll btn btn-xl">Tell Me More</a>
