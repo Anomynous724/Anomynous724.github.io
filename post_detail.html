@@ -2,7 +2,7 @@
 layout: detail
 ---
 
-<!-- Post Section -->
+<!-- Post Grid Section -->
 <section id="post" class="bg-light-gray">
   <div class="container">
     <div class="row">
@@ -12,8 +12,8 @@ layout: detail
       </div>
     </div>
     <div class="row">
-      {% for post in site.posts %}
-      {% unless post.category == "Portfolio" %}
+      {% assign posts = site.posts | where_exp: "post", "post.category != 'Portfolio'" %}
+      {% for post in posts %}
       <div class="col-md-4 col-sm-6 post-item">
         <a href="#postModal{{ post.modal-id }}" class="post-link" data-toggle="modal">
           <div class="post-hover">
@@ -28,8 +28,10 @@ layout: detail
           <p class="text-muted">{{ post.subtitle }}</p>
         </div>
       </div>
-      {% endunless %}
       {% endfor %}
+    </div>
+    <div class="row text-center">
+      <a href="/post_detail/" class="page-scroll btn btn-xl">Tell Me More</a>
     </div>
   </div>
 </section>
