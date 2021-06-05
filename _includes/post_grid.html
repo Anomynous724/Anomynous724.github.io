@@ -8,7 +8,8 @@
             </div>
         </div>
         <div class="row">
-            {% for post in site.posts %}
+            {% assign posts = site.posts | where_exp: "post", "post.category != 'Portfolio'" %}
+            {% for post in posts limit: 6 %}
             {% unless post.category == "Portfolio" %}
             <div class="col-md-4 col-sm-6 post-item">
                 <a href="#postModal{{ post.modal-id }}" class="post-link" data-toggle="modal">
