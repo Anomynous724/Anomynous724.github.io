@@ -15,7 +15,7 @@ layout: detail
       {% assign posts = site.posts | where_exp: "post", "post.category != 'Portfolio'" %}
       {% for post in posts %}
       <div class="col-md-4 col-sm-6 post-item">
-        <a href="#postModal{{ post.modal-id }}" class="post-link" data-toggle="modal">
+        <a href="{{ post.url }}" class="post-link" data-toggle="modal">
           <div class="post-hover">
             <div class="post-hover-content">
               <i class="fa fa-plus fa-3x"></i>
@@ -29,9 +29,6 @@ layout: detail
         </div>
       </div>
       {% endfor %}
-    </div>
-    <div class="row text-center">
-      <a href="/post_detail/" class="page-scroll btn btn-xl">Tell Me More</a>
     </div>
   </div>
 </section>
