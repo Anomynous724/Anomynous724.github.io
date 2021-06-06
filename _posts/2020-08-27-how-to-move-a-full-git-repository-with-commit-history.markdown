@@ -1,7 +1,7 @@
 ---
 title: How to move a full Git repository with Commit history
 subtitle: How to move a full Git repository with Commit history
-layout: default
+layout: detail
 modal-id: 1
 date: 2020-08-27
 img: dreams.png

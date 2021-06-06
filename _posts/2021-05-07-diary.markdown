@@ -1,7 +1,7 @@
 ---
 title: Diary-2021/05/07
 subtitle: Diary-2021/05/07
-layout: default
+layout: detail
 modal-id: 1
 date: 2020-09-01
 img: dreams.png

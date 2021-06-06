@@ -1,7 +1,7 @@
 ---
 title: Commit Message Guidelines
 subtitle: Commit Message Guidelines
-layout: default
+layout: detail
 modal-id: 1
 date: 2020-08-26
 img: dreams.png
