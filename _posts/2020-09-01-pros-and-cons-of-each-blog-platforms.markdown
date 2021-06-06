@@ -1,7 +1,7 @@
 ---
 title: Pros & Cons of each Blog platforms
 subtitle: Pros & Cons of each Blog platforms
-layout: detail
+layout: post_detail
 modal-id: 1
 date: 2020-09-01
 img: dreams.png
