@@ -24,9 +24,8 @@ description: Blog History
 * Stack: Docker, Git
 * Reference: [Docker Local Envrionment](https://jehuipark.github.io/blog/blog-env-setting-with-docker)
 * docker-compose.yml code: 
-```go
+```Go
 version: "3.3"
-
 services:
   jekyll:
     image: jekyll/jekyll:latest
