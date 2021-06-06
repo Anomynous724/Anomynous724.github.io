@@ -5,20 +5,204 @@
     <description>Developer. Full Stack. Always Student.</description>
     <link>http://0.0.0.0:4000/</link>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 06 Jun 2021 01:06:26 -0500</pubDate>
-    <lastBuildDate>Sun, 06 Jun 2021 01:06:26 -0500</lastBuildDate>
+    <pubDate>Sun, 06 Jun 2021 10:33:53 -0500</pubDate>
+    <lastBuildDate>Sun, 06 Jun 2021 10:33:53 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
-        <title>Round Icons</title>
-        <description>
+        <title>Problem Solving Procedure</title>
+        <description>&lt;p&gt;문제인식 2021-06-06
+현상: responsive 오류
+mobile 환경(width: 360px)에서 nav menu와 full width가 안맞는 현상 발생 =&amp;gt; 그로인해 contents 살짝 오른쪽에 여백이 생김
+=&amp;gt; 기존 agency theme에서는 문제없이 작동&lt;/p&gt;
+
+&lt;p&gt;고장탐구1: style.css 훑어보기 =&amp;gt; 뭔가 nav margin-right에 영향을 끼쳤나?
+고장탐구 결과:이상없음… nav class 자체에 margin right 및 github에서 agency.css를 많이 바꾼적 없음…&lt;/p&gt;
+
+&lt;p&gt;고장탐구2: github 이용해서 언제부터 그랬는지 추적 (캡처)
+=&amp;gt; Update portfolio_grid.html and post_grid.html
+=&amp;gt; Docker로 실시간으로 local 업데이트&lt;/p&gt;
+
+&lt;p&gt;문제점: portfolio_grid.html에 Tell me more 버튼을 추가하면서 생긴 오류 어쩌다가 nav menu에 영향을 끼쳤는지…&lt;/p&gt;
+
+&lt;p&gt;Stack: Docker, Jekyll, Github, Git
+Command: git reset –hard &lt;commit_id&gt;&lt;/commit_id&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 15 Oct 2020 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/portfolio/2020/10/15/project-6/</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/portfolio/2020/10/15/project-6/</guid>
+        <pubDate>Sun, 06 Jun 2021 00:00:00 -0500</pubDate>
+        <link>http://0.0.0.0:4000/post/skills/how-to-solve-a-problem/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/post/skills/how-to-solve-a-problem/</guid>
         
         
-        <category>Portfolio</category>
+        <category>Post</category>
+        
+        <category>Skills</category>
+        
+      </item>
+    
+      <item>
+        <title>Blog History</title>
+        <description>&lt;h3 id=&quot;blog-history&quot;&gt;Blog History&lt;/h3&gt;
+
+&lt;h4 id=&quot;blog-renewal&quot;&gt;Blog Renewal&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Date: 2021-06-06&lt;/li&gt;
+  &lt;li&gt;Basic Theme: Agency Jekyll Blog Theme&lt;/li&gt;
+  &lt;li&gt;Source: &lt;a href=&quot;https://github.com/raviriley/agency-jekyll-theme&quot;&gt;agency-jekyll-theme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;set-up-local-environment&quot;&gt;Set Up Local Environment&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Date: 2021-05-28&lt;/li&gt;
+  &lt;li&gt;Stack: Docker, Git&lt;/li&gt;
+  &lt;li&gt;Reference: &lt;a href=&quot;https://jehuipark.github.io/blog/blog-env-setting-with-docker&quot;&gt;Docker Local Envrionment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;docker-compose.yml code:
+```go
+version: “3.3”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    command: jekyll serve –force_polling –drafts –livereload –trace
+    ports:
+      - “4000:4000”
+    volumes:
+      - “.:/srv/jekyll”&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+#### Add Typed Animation in Header Introduction
+* Date: 2021-05-28
+* Stack: Liquid, Javascript(typed.min.js)
+* Code:
+```Javascript
+&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
+                    var typed = new Typed('.typed', {
+                        // Waits 1000ms after typing &quot;First&quot;
+                        strings: [
+                            'Developer.',
+                            'Always Student.'
+                        ],
+                        smartBackspace: true,
+                        typeSpeed: 30,
+                        backSpeed: 30,
+                        backDelay: 1000,
+                        loop: true,
+                        loopCount: Infinity
+                    });
+                &amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Result:
+&lt;img src=&quot;http://0.0.0.0:4000/img/post/blog/blog-history/header-typed-animation.gif&quot; alt=&quot;Typed Animation&quot; title=&quot;Logo Title Text 1&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;add-social&quot;&gt;Add Social&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Date: 2021-05-29&lt;/li&gt;
+  &lt;li&gt;Stack: Liquid, Jekyll&lt;/li&gt;
+  &lt;li&gt;Details: StackOverFlow, Github, Linkedin&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;fix-nav-menu-shrink-error&quot;&gt;Fix Nav Menu Shrink Error&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Date: 2021-05-29&lt;/li&gt;
+  &lt;li&gt;Stack: Liquid, Jekyll, Javascript, jQuery&lt;/li&gt;
+  &lt;li&gt;Problem: Nav Bar doesn’t shrink when scroll down.&lt;/li&gt;
+  &lt;li&gt;Cause: In default.html, js.html is moved to the top second position for typed animation.&lt;/li&gt;
+  &lt;li&gt;Solution: In header.html, typed animation script tags is surrounded by document.&lt;/li&gt;
+  &lt;li&gt;Code:
+    &lt;pre&gt;&lt;code class=&quot;language-Javascript&quot;&gt;document.addEventListener(&quot;DOMContentLoaded&quot;, function(event) { });
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;fix-mail-error&quot;&gt;Fix Mail Error&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Date: 2021-05-29&lt;/li&gt;
+  &lt;li&gt;Stack: Liquid, Jekyll, Javascript, HTML, ajax&lt;/li&gt;
+  &lt;li&gt;Problem: Mail Service doesn’t work.&lt;/li&gt;
+  &lt;li&gt;Cause: Github pages Service only supports static websites, not dynamic website(node.js, php, and etc).&lt;/li&gt;
+  &lt;li&gt;Solution: Use formspree.io service.&lt;/li&gt;
+  &lt;li&gt;Details:
+    &lt;ol&gt;
+      &lt;li&gt;The ‘agency Jekyll theme’ mail service is made by php which is server-side programming language. However, Github pages only supports static html components, so a blog that is serviced by Github pages cannot actually run server side components including node.js, php…. I’ll use formspree.io service
+Formspree.io service only takes json file with special header.&lt;/li&gt;
+      &lt;li&gt;Using Ajax with Formspree.io
+        &lt;pre&gt;&lt;code class=&quot;language-Javascript&quot;&gt;$.ajax({
+url: &quot;https://formspree.io/f/YOUR_FORM_ID&quot;,
+method: &quot;POST&quot;,
+dataType: &quot;json&quot;,
+data: {
+  email: &quot;a.visitor@email.com&quot;,
+  message: &quot;Hello!&quot;
+}
+});
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Reference:
+    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;https://dev.to/charalambosioannou/create-a-static-webpage-with-a-contact-form-on-github-pages-3532&quot;&gt;https://dev.to/charalambosioannou/create-a-static-webpage-with-a-contact-form-on-github-pages-3532&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://dev-yakuza.posstree.com/ko/jekyll/send-email/&quot;&gt;https://dev-yakuza.posstree.com/ko/jekyll/send-email/&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/24348223/send-email-from-static-page-hosted-on-github-pages&quot;&gt;https://stackoverflow.com/questions/24348223/send-email-from-static-page-hosted-on-github-pages&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://jehwanyoo.net/2020/09/28/%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8(Github%20Pages)%EC%97%90%EC%84%9C-%EC%B5%9C%EC%8B%A0%EA%B8%80-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/&quot;&gt;https://jehwanyoo.net/2020/09/28/%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8(Github%20Pages)%EC%97%90%EC%84%9C-%EC%B5%9C%EC%8B%A0%EA%B8%80-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://help.formspree.io/hc/en-us/articles/360013470814-Submit-forms-with-JavaScript-AJAX-&quot;&gt;https://help.formspree.io/hc/en-us/articles/360013470814-Submit-forms-with-JavaScript-AJAX-&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Reference Website&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.salary.com/articles/sell-yourself-14-steps-to-creating-a-powerful-personal-brand/&quot;&gt;https://www.salary.com/articles/sell-yourself-14-steps-to-creating-a-powerful-personal-brand/&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 May 2021 00:00:00 -0500</pubDate>
+        <link>http://0.0.0.0:4000/post/blog/blog-history/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/post/blog/blog-history/</guid>
+        
+        
+        <category>Post</category>
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Blog Guideline</title>
+        <description>&lt;h1 id=&quot;junseo-yang-blog-guideline&quot;&gt;Junseo Yang Blog Guideline&lt;/h1&gt;
+
+&lt;h2 id=&quot;blog-goal&quot;&gt;Blog Goal&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Brand Myself
+    &lt;ul&gt;
+      &lt;li&gt;Step 1: Determine your unique value proposition.&lt;/li&gt;
+      &lt;li&gt;Step 2: Find out how others see you.&lt;/li&gt;
+      &lt;li&gt;Step 3: Identify your goals.&lt;/li&gt;
+      &lt;li&gt;Step 4: Identify your target audience.&lt;/li&gt;
+      &lt;li&gt;Step 5: Reorganize your priorities.&lt;/li&gt;
+      &lt;li&gt;Step 6: Pay attention to the details.&lt;/li&gt;
+      &lt;li&gt;Step 7: Update your resume.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Improve Self-Explanatory Coding Skills&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Reference Website&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.salary.com/articles/sell-yourself-14-steps-to-creating-a-powerful-personal-brand/&quot;&gt;https://www.salary.com/articles/sell-yourself-14-steps-to-creating-a-powerful-personal-brand/&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 May 2021 00:00:00 -0500</pubDate>
+        <link>http://0.0.0.0:4000/post/blog/blog-guideline/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/post/blog/blog-guideline/</guid>
+        
+        
+        <category>Post</category>
+        
+        <category>Blog</category>
         
       </item>
     
@@ -51,9 +235,9 @@ Windows PC는 다양한 하드웨어 조합이 가능하므로 고성능 하드�
 
 &lt;p&gt;결론: 내가 원하는 목적과 기능에 맞게 개발환경을 구현하자.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 01 Sep 2020 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/post/2020/09/01/diary/</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/post/2020/09/01/diary/</guid>
+        <pubDate>Fri, 07 May 2021 00:00:00 -0500</pubDate>
+        <link>http://0.0.0.0:4000/post/diary/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/post/diary/</guid>
         
         
         <category>Post</category>
@@ -208,8 +392,8 @@ Code Highlighting 이 되지 않아 샘플 코드를 첨부할때 되게 못나�
 &lt;p&gt;&lt;a href=&quot;https://luiseok.com/2&quot;&gt;https://luiseok.com/2&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 01 Sep 2020 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/post/2020/09/01/pros-and-cons-of-each-blog-platforms/</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/post/2020/09/01/pros-and-cons-of-each-blog-platforms/</guid>
+        <link>http://0.0.0.0:4000/post/pros-and-cons-of-each-blog-platforms/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/post/pros-and-cons-of-each-blog-platforms/</guid>
         
         
         <category>Post</category>
@@ -306,8 +490,8 @@ Code Highlighting 이 되지 않아 샘플 코드를 첨부할때 되게 못나�
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 27 Aug 2020 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/post/2020/08/27/how-to-move-a-full-git-repository-with-commit-history/</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/post/2020/08/27/how-to-move-a-full-git-repository-with-commit-history/</guid>
+        <link>http://0.0.0.0:4000/post/how-to-move-a-full-git-repository-with-commit-history/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/post/how-to-move-a-full-git-repository-with-commit-history/</guid>
         
         
         <category>Post</category>
@@ -417,8 +601,8 @@ Fixes #123, #124
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 26 Aug 2020 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/post/2020/08/26/commit-message-guidelines/</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/post/2020/08/26/commit-message-guidelines/</guid>
+        <link>http://0.0.0.0:4000/post/commit-message-guidelines/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/post/commit-message-guidelines/</guid>
         
         
         <category>Post</category>
@@ -867,11 +1051,13 @@ Disallow: /hello/&lt;br /&gt;&lt;br /&gt;
 
 </description>
         <pubDate>Tue, 25 Aug 2020 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/post/2020/08/25/first-step-of-github-blog/</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/post/2020/08/25/first-step-of-github-blog/</guid>
+        <link>http://0.0.0.0:4000/post/blog/first-step-of-github-blog/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/post/blog/first-step-of-github-blog/</guid>
         
         
         <category>Post</category>
+        
+        <category>Blog</category>
         
       </item>
     
@@ -1005,8 +1191,8 @@ Admin패널처럼 이용하려면&lt;/p&gt;
 (https://blog.chulgil.me/how-to-make-blog-using-github/) - Chulgil.Lee&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Aug 2020 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/post/2020/08/23/pros-and-cons-using-github-blog/</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/post/2020/08/23/pros-and-cons-using-github-blog/</guid>
+        <link>http://0.0.0.0:4000/post/pros-and-cons-using-github-blog/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/post/pros-and-cons-using-github-blog/</guid>
         
         
         <category>Post</category>
@@ -1018,34 +1204,8 @@ Admin패널처럼 이용하려면&lt;/p&gt;
         <description>
 </description>
         <pubDate>Fri, 18 Jul 2014 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/portfolio/2014/07/18/project-1/</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/portfolio/2014/07/18/project-1/</guid>
-        
-        
-        <category>Portfolio</category>
-        
-      </item>
-    
-      <item>
-        <title>Escape</title>
-        <description>
-</description>
-        <pubDate>Thu, 17 Jul 2014 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/portfolio/2014/07/17/project-2/</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/portfolio/2014/07/17/project-2/</guid>
-        
-        
-        <category>Portfolio</category>
-        
-      </item>
-    
-      <item>
-        <title>Golden</title>
-        <description>
-</description>
-        <pubDate>Wed, 16 Jul 2014 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/portfolio/2014/07/16/project-3/</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/portfolio/2014/07/16/project-3/</guid>
+        <link>http://0.0.0.0:4000/portfolio/project-1/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/portfolio/project-1/</guid>
         
         
         <category>Portfolio</category>
