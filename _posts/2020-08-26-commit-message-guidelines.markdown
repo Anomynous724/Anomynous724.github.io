@@ -2,7 +2,6 @@
 title: Commit Message Guidelines
 subtitle: Commit Message Guidelines
 layout: post_detail
-modal-id: 1
 date-created: 2020-08-26
 date-edited:
 img: dreams.png

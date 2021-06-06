@@ -4,10 +4,9 @@ subtitle: How to solve a problem
 layout: post_detail
 date-created: 2021-06-06
 date-edited: 
-img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt
-category: Post
+category: [Post, Skills]
 description: Improving Problem Solving Skill
 ---
 

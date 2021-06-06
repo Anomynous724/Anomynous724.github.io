@@ -2,7 +2,6 @@
 title: Pros & Cons of using Github Blog
 subtitle: Website Design
 layout: post_detail
-modal-id: 1
 date: 2020-08-23
 img: dreams.png
 thumbnail: dreams-thumbnail.png

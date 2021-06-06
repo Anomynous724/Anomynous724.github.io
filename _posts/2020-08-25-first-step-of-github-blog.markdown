@@ -2,7 +2,6 @@
 title: First Step of Github Blog
 subtitle: Website Design
 layout: post_detail
-modal-id: 1
 date-created: 2020-08-25
 date-edited:
 img: dreams.png
@@ -10,7 +9,7 @@ thumbnail: dreams-thumbnail.png
 alt: image-alt
 project-date: August 2020
 client: Start Bootstrap
-category: Post
+category: [Post, Blog]
 description: First Step of Github Blog
 ---
 
