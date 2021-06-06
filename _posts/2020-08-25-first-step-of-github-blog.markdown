@@ -3,7 +3,8 @@ title: First Step of Github Blog
 subtitle: Website Design
 layout: post_detail
 modal-id: 1
-date: 2020-08-25
+date-created: 2020-08-25
+date-edited:
 img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt

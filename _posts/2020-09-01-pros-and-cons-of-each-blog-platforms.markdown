@@ -3,7 +3,8 @@ title: Pros & Cons of each Blog platforms
 subtitle: Pros & Cons of each Blog platforms
 layout: post_detail
 modal-id: 1
-date: 2020-09-01
+date-created: 2020-09-01
+date-edited:
 img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt

@@ -2,7 +2,8 @@
 title: Problem Solving Procedure
 subtitle: How to solve a problem
 layout: post_detail
-date: 2021-06-06
+date-created: 2021-06-06
+date-edited: 
 img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt

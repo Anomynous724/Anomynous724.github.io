@@ -3,7 +3,8 @@ title: Diary-2021/05/07
 subtitle: Diary-2021/05/07
 layout: post_detail
 modal-id: 1
-date: 2020-09-01
+date-created: 2020-09-01
+date-edited:
 img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt
