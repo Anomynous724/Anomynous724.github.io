@@ -77,13 +77,20 @@ document.addEventListener("DOMContentLoaded", function(event) { });
 #### Fix Mail Error
 * Date: 2021-05-29
 * Stack: Liquid, Jekyll, Javascript, HTML, ajax
-* Problem: Mail Service doesn't work.
+* Problem1: Mail Service doesn't work.
 * Cause: Github pages Service only supports static websites, not dynamic website(node.js, php, and etc).
 * Solution: Use formspree.io service.
 * Details:
 1. The ‘agency Jekyll theme’ mail service is made by php which is server-side programming language. However, Github pages only supports static html components, so a blog that is serviced by Github pages cannot actually run server side components including node.js, php…. I’ll use formspree.io service
 Formspree.io service only takes json file with special header.
 2. Using Ajax with Formspree.io
+* Problem2
+1. Form name missing
+2. Redirect Page missing
+* Solution
+1. Add name for each input
+2. Modify url, method, dataType data
+(Formspree only accept json => CORS policy)
 ```Javascript
 $.ajax({
   url: "https://formspree.io/f/YOUR_FORM_ID",
@@ -103,8 +110,118 @@ $.ajax({
 4. [https://jehwanyoo.net/2020/09/28/%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8(Github%20Pages)%EC%97%90%EC%84%9C-%EC%B5%9C%EC%8B%A0%EA%B8%80-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/](https://jehwanyoo.net/2020/09/28/%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8(Github%20Pages)%EC%97%90%EC%84%9C-%EC%B5%9C%EC%8B%A0%EA%B8%80-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/)
 5. [https://help.formspree.io/hc/en-us/articles/360013470814-Submit-forms-with-JavaScript-AJAX-](https://help.formspree.io/hc/en-us/articles/360013470814-Submit-forms-with-JavaScript-AJAX-)
 
----
 
-Reference Website
+#### Add Favicon
+* Date: 2021-05-31
+* Stack: Liquid, Jekyll, Javascript, HTML
 
-[https://www.salary.com/articles/sell-yourself-14-steps-to-creating-a-powerful-personal-brand/](https://www.salary.com/articles/sell-yourself-14-steps-to-creating-a-powerful-personal-brand/)
+#### Add Biography
+* Date: 2021-05-31
+* Stack: Liquid, Jekyll, Javascript, HTML
+* Details: Agency Jekyll Theme had about section, but I replace it with biography section
+
+#### Write Short About
+* Date: 2021-06-01
+* Stack: Liquid, Jekyll, Javascript, HTML
+* Details: Modify About Description
+
+#### Add Resume Button
+* Date: 2021-06-01
+* Stack: Liquid, Jekyll, Javascript, HTML
+* Details: Add Resume Button in about section
+
+#### Fix Font Size Error
+* Date: 2021-06-02
+* Stack: Liquid, Jekyll, Javascript, HTML
+* Details:
+  * Add custom.css for responsive css
+  * Add ```{% include css/custom.css %}``` in style tag
+ 
+#### Seperate Post and Portfolio
+* Date: 2021-06-05
+* Stack: Liquid, Jekyll, Javascript, HTML
+* Details:
+  1. Using Jekyll Default Function "Category"
+  2. Add Category to Markdown File (e.g. Post, Portfolio)
+
+#### Seperate default.html and index.html
+* Date: 2021-06-05
+* Stack: Liquid, Jekyll, Javascript, HTML
+* Details:
+  1. Seperate default template and index.html for the purpose for Scalable Static Website
+
+#### Create post_grid.html
+* Date: 2021-06-05
+* Stack: Liquid, Jekyll, Javascript, HTML
+* Details:
+  1. Create post_grid.html
+  2. Add Liquid If statement to Filter Post only
+```
+{% for post in site.posts %}
+{% if post.category == "Post" %}
+{% endif %}
+{% endfor %}
+```
+
+#### Update custom.css
+* Date: 2021-06-05
+* Stack: Liquid, Jekyll, Javascript, HTML
+* Details:
+  1. Modify custom.css for style for post
+  2. Change portfolio style to post style
+
+#### Fix Hover Color Error
+* Date: 2021-06-05
+* Stack: Liquid, Jekyll, Javascript, HTML
+* Details:
+  1. Modify agency.css
+  2. Modify custom.css
+  3. Modify rgba
+
+#### Add Tell me more button in portfolio and post section
+* Date: 2021-06-05
+* Stack: Liquid, Jekyll, Javascript, HTML
+
+#### Seperate nav and header
+* Date: 2021-06-05
+* Stack: Liquid, Jekyll, Javascript, HTML
+
+#### Change Nav background from transparent to #222
+* Date: 2021-06-05
+* Stack: Liquid, Jekyll, Javascript, HTML
+
+#### Create nav_home and nav_detail
+* Date: 2021-06-05
+* Details:
+1. Seperate nav.html into nav_home and nav_detail for detailed homepage
+
+#### Modify layout
+* Date: 2021-06-05
+* Details:
+  1. Modify layout default
+  2. Create layout detail
+
+#### Create Detail pages
+* Date: 2021-06-05
+* Details:
+
+#### Fix Recent Portfolio and Post Limit Error
+* Date: 2021-06-05
+* Details:
+1. Use assign statement to filter only portfolios from posts.
+2. Limit show only 6 Portfolios
+3. Use assign statement to filter only posts from all posts + portfolios.
+4. Limit show only 6 Posts
+
+#### Fix Margin right Error
+* Date: 2021-06-06
+* Problem: Contents doesn't fit to the full width in Mobile Environment(width:360px)
+* Cause: Using <div class="row"> inside a div with row class
+
+#### Change Post Markdown Layout
+* Date: 2021-06-06
+1. Change Post Markdown Layout from default to detail
+* Purpose: Generate Links in Detail Homepage
+
+#### Focusing on Posting after...
+* Date: 2021-06-08
