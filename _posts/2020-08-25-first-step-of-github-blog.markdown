@@ -5,10 +5,8 @@ layout: post_detail
 date-created: 2020-08-25
 date-edited:
 img: dreams.png
-thumbnail: dreams-thumbnail.png
+thumbnail: 2020-08-25-first-step-of-github-blog-thumbnail.jpg
 alt: image-alt
-project-date: August 2020
-client: Start Bootstrap
 category: [Post, Blog]
 description: First Step of Github Blog
 ---

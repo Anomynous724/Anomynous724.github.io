@@ -2,12 +2,10 @@
 title: Blog History
 subtitle: Blog Renewal, Create, Edit, and etc.
 layout: post_detail
-date-created: 2020-05-27
-date-edited: 2020-06-06
+date-created: 2021-05-27
+date-edited: 2021-06-06
 thumbnail: 2021-05-27-blog-history-thumbnail.jpg
 alt: image-alt
-project-date: May 2021
-client: Start Bootstrap
 category: [Post, Blog]
 description: Blog History
 ---

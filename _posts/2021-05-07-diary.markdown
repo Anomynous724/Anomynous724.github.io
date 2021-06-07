@@ -1,27 +1,24 @@
 ---
-title: Diary-2021/05/07
-subtitle: Diary-2021/05/07
+title: Diary 2021-05-07
+subtitle: Diary 2021-05-07
 layout: post_detail
-date-created: 2020-09-01
-date-edited:
+date-created: 2021-05-07
+date-edited: 2021-06-07
 img: dreams.png
-thumbnail: dreams-thumbnail.png
+thumbnail: 2021-05-07-diary-thumbnail.jpg
 alt: image-alt
-project-date: May 2021
-client: Start Bootstrap
 category: Post
-description: Diary-2021/05/07
+description: Diary 2021/05/07
 ---
 
 ### 오늘 한일 2021-05-07
 
 * Docker 공부
-- container, docker run, 
-
+  - container, docker run, docker compose up
 * Git bash CLI 명령어 공부
-- git clone (url)
-- git add .
-- git status
+  - git clone (url)
+  - git add .
+  - git status
 
 ---
 

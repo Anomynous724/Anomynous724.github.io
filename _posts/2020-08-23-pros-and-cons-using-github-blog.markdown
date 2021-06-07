@@ -4,10 +4,8 @@ subtitle: Website Design
 layout: post_detail
 date: 2020-08-23
 img: dreams.png
-thumbnail: dreams-thumbnail.png
+thumbnail: 2020-08-23-pros-and-cons-using-github-blog-thumbnail.jpg
 alt: image-alt
-project-date: August 2020
-client: Start Bootstrap
 category: Post
 description: Pros & Cons of using Github Blog
 ---

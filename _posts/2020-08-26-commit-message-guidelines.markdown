@@ -5,10 +5,8 @@ layout: post_detail
 date-created: 2020-08-26
 date-edited:
 img: dreams.png
-thumbnail: dreams-thumbnail.png
+thumbnail: 2020-08-26-commit-message-guidelines-thumbnail.jpg
 alt: image-alt
-project-date: August 2020
-client: Start Bootstrap
 category: Post
 description: Commit Message Guidelines
 ---

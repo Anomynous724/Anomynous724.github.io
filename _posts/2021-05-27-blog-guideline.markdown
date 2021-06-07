@@ -6,8 +6,6 @@ date-created: 2020-05-27
 date-edited: 2020-06-06
 thumbnail: 2021-05-27-blog-guideline-thumbnail.jpg
 alt: image-alt
-project-date: May 2021
-client: Start Bootstrap
 category: [Post, Blog]
 description: Blog Guideline
 ---

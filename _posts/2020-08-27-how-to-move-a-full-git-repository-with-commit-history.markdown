@@ -5,10 +5,8 @@ layout: post_detail
 date-created: 2020-08-27
 date-edited:
 img: dreams.png
-thumbnail: dreams-thumbnail.png
+thumbnail: 2020-08-27-how-to-move-a-full-git-repository-with-commit-history-thumbnail.jpg
 alt: image-alt
-project-date: August 2020
-client: Start Bootstrap
 category: Post
 description: How to move a full Git repository with Commit history
 ---

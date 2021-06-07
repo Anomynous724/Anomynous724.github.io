@@ -5,10 +5,8 @@ layout: post_detail
 date-created: 2020-09-01
 date-edited:
 img: dreams.png
-thumbnail: dreams-thumbnail.png
+thumbnail: 2020-09-01-pros-and-cons-of-each-blog-platforms-thumbnail.jpg
 alt: image-alt
-project-date: September 2020
-client: Start Bootstrap
 category: Post
 description: Pros & Cons of each Blog platforms
 ---
