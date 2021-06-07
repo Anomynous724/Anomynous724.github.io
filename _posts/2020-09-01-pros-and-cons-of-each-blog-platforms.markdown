@@ -1,5 +1,5 @@
 ---
-title: Pros & Cons of each Blog platforms
+title: Pros&Cons of Blog platforms
 subtitle: Pros & Cons of each Blog platforms
 layout: post_detail
 date-created: 2020-09-01

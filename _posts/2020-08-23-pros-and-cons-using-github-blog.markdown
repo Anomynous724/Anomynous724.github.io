@@ -1,5 +1,5 @@
 ---
-title: Pros & Cons of using Github Blog
+title: Pros & Cons of Github Blog
 subtitle: Website Design
 layout: post_detail
 date: 2020-08-23

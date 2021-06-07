@@ -1,11 +1,11 @@
 ---
-title: How to move a full Git repository with Commit history
-subtitle: How to move a full Git repository with Commit history
+title: Move Git repository
+subtitle: Move a Git repository
 layout: post_detail
 date-created: 2020-08-27
 date-edited:
 img: dreams.png
-thumbnail: 2020-08-27-how-to-move-a-full-git-repository-with-commit-history-thumbnail.jpg
+thumbnail: 2020-08-27-move-git-repository-thumbnail.jpg
 alt: image-alt
 category: Post
 description: How to move a full Git repository with Commit history
