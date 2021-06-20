@@ -225,3 +225,9 @@ $.ajax({
 
 #### Focusing on Posting after...
 * Date: 2021-06-08
+
+#### Remove Empty Spaces in Grid
+* Date: 2021-06-21
+* Problem: 2 Empty Spaces after third columns
+* Cause: The length of title
+* Solve: Modify Grid System from col-md-4 to col-md-6
