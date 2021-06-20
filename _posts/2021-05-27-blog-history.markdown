@@ -135,7 +135,10 @@ $.ajax({
 * Stack: Liquid, Jekyll, Javascript, HTML
 * Details:
   * Add custom.css for responsive css
-  * Add ```{% include css/custom.css %}``` in style tag
+  * Add in style tag
+{% raw %}
+{% include css/custom.css %}
+{% endraw %}
  
 #### Seperate Post and Portfolio
 * Date: 2021-06-05
