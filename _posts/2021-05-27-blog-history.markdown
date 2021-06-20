@@ -3,7 +3,7 @@ title: Blog History
 subtitle: Blog Renewal
 layout: post_detail
 date-created: 2021-05-27
-date-edited: 2021-06-06
+date-edited: [2021-06-06, 2021-06-21]
 thumbnail: 2021-05-27-blog-history-thumbnail.jpg
 alt: image-alt
 category: [Post, Blog]
