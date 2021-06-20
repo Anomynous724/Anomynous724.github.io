@@ -17,6 +17,10 @@ description: Blog History
 * Basic Theme: Agency Jekyll Blog Theme
 * Source: [agency-jekyll-theme](https://github.com/raviriley/agency-jekyll-theme)
 
+#### Configure Blog
+* Date: 2021-05-27
+* Details: Change BaseURL, Theme
+
 #### Set Up Local Environment
 * Date: 2021-05-28
 * Stack: Docker, Git
@@ -33,6 +37,7 @@ services:
     volumes:
       - ".:/srv/jekyll"
 ```
+* Reference: [Docker Local Environment .yml file](https://www.44bits.io/ko/post/almost-perfect-development-environment-with-docker-and-docker-compose)
 
 #### Add Typed Animation in Header Introduction
 * Date: 2021-05-28
