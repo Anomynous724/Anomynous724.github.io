@@ -15,7 +15,7 @@ layout: detail
       {% assign posts = site.posts | where_exp: "post", "post.category contains 'Post'" %}
       {% for post in posts %}
       <div class="col-md-4 col-sm-6 post-item">
-        <a href="{{ post.url }}" class="post-link" data-toggle="modal">
+        <a href="{{ post.url }}" class="post-link">
           <div class="post-hover">
             <div class="post-hover-content">
               <i class="fa fa-plus fa-3x"></i>
