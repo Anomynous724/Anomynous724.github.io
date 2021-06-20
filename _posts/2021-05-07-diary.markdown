@@ -1,6 +1,6 @@
 ---
-title: Diary-2021-05-07
-subtitle: Diary-2021-05-07
+title: Diary 2021-05-07
+subtitle: 2021-05-07
 layout: post_detail
 date-created: 2021-05-07
 date-edited: 2021-06-07

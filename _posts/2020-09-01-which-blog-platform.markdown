@@ -1,11 +1,11 @@
 ---
-title: Pros&Cons of Blog platforms
-subtitle: Pros & Cons of each Blog platforms
+title: Which Blog platform?
+subtitle: Pros & Cons of each platforms
 layout: post_detail
 date-created: 2020-09-01
 date-edited:
 img: dreams.png
-thumbnail: 2020-09-01-pros-and-cons-of-each-blog-platforms-thumbnail.jpg
+thumbnail: 2020-09-01-which-of-each-blog-platform-thumbnail.jpg
 alt: image-alt
 category: Post
 description: Pros & Cons of each Blog platforms

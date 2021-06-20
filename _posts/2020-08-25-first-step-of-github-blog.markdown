@@ -1,5 +1,5 @@
 ---
-title: First Step of Github Blog
+title: First Step of Blog
 subtitle: Website Design
 layout: post_detail
 date-created: 2020-08-25

@@ -1,6 +1,6 @@
 ---
 title: Blog History
-subtitle: Blog Renewal, Create, Edit, and etc.
+subtitle: Blog Renewal
 layout: post_detail
 date-created: 2021-05-27
 date-edited: 2021-06-06

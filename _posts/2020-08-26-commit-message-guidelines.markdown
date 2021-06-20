@@ -1,5 +1,5 @@
 ---
-title: Commit Message Guidelines
+title: Commit Message
 subtitle: Commit Message Guidelines
 layout: post_detail
 date-created: 2020-08-26

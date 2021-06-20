@@ -1,6 +1,6 @@
 ---
-title: Problem Solving Procedure
-subtitle: How to solve a problem
+title: How to solve a problem
+subtitle: Problem Solving Procedure
 layout: post_detail
 date-created: 2021-06-06
 date-edited: 
