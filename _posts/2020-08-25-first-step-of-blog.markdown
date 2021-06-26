@@ -1,39 +1,37 @@
 ---
 title: First Step of Blog
-subtitle: Website Design
+subtitle: Github Pages Blog
 layout: post_detail
 date-created: 2020-08-25
-date-edited:
+date-edited: 2021-06-26
 img: dreams.png
-thumbnail: 2020-08-25-first-step-of-github-blog-thumbnail.jpg
+thumbnail: 2020-08-25-first-step-of-blog-thumbnail.jpg
 alt: image-alt
 category: [Post, Blog]
 description: First Step of Github Blog
 ---
 
-# First Step of Github Blog
+# First Step of Github Pages Blog
 
 ---
-
-
 
 ## Step 1:  깃 블로그란
 
 깃 블로그란  Github 저장소에 저장된 html 파일과 같은 정적 웹 문서들을 GitHub에서 무료로 웹에서 볼 수 있도록 호스팅 서비스(github pages)를 제공해 주는 것입니다. 
-때문에 Github을 이용하는 사용자들은 **누구나 고유의 정적 웹 사이트 1개를 가질 수 있습니다.** 계정이 없다면 [Github]({{ "https://github.com/" }}){:target="_blank"}에서 Github 계정 생성합니다.
+때문에 Github을 이용하는 사용자들은 **누구나 고유의 정적 웹 사이트 1개를 가질 수 있습니다.** 계정이 없다면 [Github](https://github.com/){:target="_blank"}에서 Github 계정 생성합니다.
 계정을 만들고 신규 Repository를 **{Git ID}.github.com** 으로 세팅합니다. 
 
 **Please Note:** 해당 포스트는 어느 정도 깃의 사용법을 알고 있다는 가정하에 작성하였습니다.
 {: .notice--danger}
 
-![Git repository 신규 생성 이미지]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/create-repository.png){: .align-center}
+![Git repository 신규 생성 이미지](/img/{{ page.url }}/jekyll/create-repository.png){: .img-responsive .img-centered}
 
-정상적으로 생성되었다면 세팅 메뉴 중 하단 GitHub Pages가 그림과 같이 활성화되어있을 것입니다.
-<br /> https://github.com/{ Git ID }/{ Repository 이름 }/settings <br />
+정상적으로 생성되었다면 세팅 메뉴 중 하단 GitHub Pages가 그림과 같이 활성화되어있을 것입니다.  
+https://github.com/{ Git ID }/{ Repository 이름 }/settings
 
-![Git repository Setting 확인]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/settings-1.png){: .align-center}
+![Git repository Setting 확인](/img/{{ page.url }}/jekyll/settings-1.png){: .img-responsive .img-centered}
 
-![Git repository Setting 확인]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/settings-2.png){: .align-center}
+![Git repository Setting 확인](/img/{{ page.url }}/jekyll/settings-2.png){: .img-responsive .img-centered}
 
 위 그림과 같이 정상적으로 반영 되었다면 https://{ Git ID }.github.io/ URL 접근 가능합니다.
 
@@ -41,16 +39,16 @@ description: First Step of Github Blog
 
 ## Step 2: GitBlog와 Jekyll
 
-이러한 Github page에 Jekyll을 결합한다면 좀 더 생산적이고 강력한 블로그를 만들 수 있습니다. Jekyll이란 HTML(.html), Markdown(.md) 등 다양한 포맷의 텍스트들을 읽고 가공하여 자신의 웹 사이트에 바로 게시할 수 있게 해주는 Rubby언어로 만들어진 하나의 **텍스트 변환 엔진**이라고 보면 됩니다. 쉽게 말해 html을 모르더라도 공부하기 비교적 수월한 markdown 파일을 작성하면 알아서 html파일로 변환되어 웹 서비스를 구축해 준다고 생각하면 됩니다. 지킬을 사용하여 게시글을 작성한다면 웹 사이트를 효율적으로 구성할 수 있습니다. Jekyll은 Github의 내부 엔진이기 때문에 Github page에서도 자연스럽게 동작합니다. 감사하게도 이러한 jekyll을 가지고 사용자들이 다양한 테마를 미리 만들고 공유하여 디자인에 대해 깊은 고민은 하지 않게 해주었습니다. 주소는 아래와 같습니다.<br>
-<br>
-[http://jekyllthemes.org/]({{"http://jekyllthemes.org/"}}){:target="_blank"}<br>
-[http://themes.jekyllrc.org/]({{"http://themes.jekyllrc.org/"}}){:target="_blank"}<br>
-[https://jekyllthemes.io/]({{"https://jekyllthemes.io/"}}){:target="_blank"}<br>
-<br>
-필자의 선택은 꾸준한 업데이트가 강점인 [https://github.com/mmistakes/minimal-mistakes]({{"https://github.com/mmistakes/minimal-mistakes"}}){:target="_blank"}테마를 선택하였습니다. ReadMe.md파일 안에 해당 테마에 대한 자세한 사용 방법이 기술되어 있습니다.<br>
+이러한 Github page에 Jekyll을 결합한다면 좀 더 생산적이고 강력한 블로그를 만들 수 있습니다. Jekyll이란 HTML(.html), Markdown(.md) 등 다양한 포맷의 텍스트들을 읽고 가공하여 자신의 웹 사이트에 바로 게시할 수 있게 해주는 Rubby언어로 만들어진 하나의 **텍스트 변환 엔진**이라고 보면 됩니다. 쉽게 말해 html을 모르더라도 공부하기 비교적 수월한 markdown 파일을 작성하면 알아서 html파일로 변환되어 웹 서비스를 구축해 준다고 생각하면 됩니다. 지킬을 사용하여 게시글을 작성한다면 웹 사이트를 효율적으로 구성할 수 있습니다. Jekyll은 Github의 내부 엔진이기 때문에 Github page에서도 자연스럽게 동작합니다. 감사하게도 이러한 jekyll을 가지고 사용자들이 다양한 테마를 미리 만들고 공유하여 디자인에 대해 깊은 고민은 하지 않게 해주었습니다. 주소는 아래와 같습니다.  
+  
+* [http://jekyllthemes.org/]({{"http://jekyllthemes.org/"}}){:target="_blank"}
+* [http://themes.jekyllrc.org/]({{"http://themes.jekyllrc.org/"}}){:target="_blank"}
+* [https://jekyllthemes.io/]({{"https://jekyllthemes.io/"}}){:target="_blank"}
+
+필자의 선택은 꾸준한 업데이트가 강점인 [https://github.com/mmistakes/minimal-mistakes]({{"https://github.com/mmistakes/minimal-mistakes"}}){:target="_blank"}테마를 선택하였습니다. ReadMe.md파일 안에 해당 테마에 대한 자세한 사용 방법이 기술되어 있습니다.  
 테마를 Fork뜨거나 Download합니다.  필자는 Fork시 GitHub 녹색 잔디가 심어지지 않아 다운로드 후  작업하였습니다. 
 
-![Fork확인]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/fork.png){: .align-center}
+![Fork확인](/img/{{ page.url }}/jekyll/fork.png){: .img-responsive .img-centered}
 
 다운로드한 minimal-mistakes테마 Zip파일을 Step1에서 생성한 Repository하위에서 압축 해제합니다.
 
@@ -67,20 +65,20 @@ Jekyll은 하나의 동적 객체 지향 스크립트 프로그래밍 언어인 
 
 `# jekyll serve`
 
-![Ruby Setting 확인]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/console.png){: .align-center}
+![Ruby Setting 확인](/img/{{ page.url }}/jekyll/console.png){: .img-responsive .img-centered}
 
 정상적으로 설치가 되었다면 이제 [http://localhost:4000/ ]({{"http://localhost:4000/"}}){:target="_blank"}으로 해당 테마를 확인할 수 있습니다.
 
-![로컬서버]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/start-mini.png){: .align-center}
+![로컬서버](/img/{{ page.url }}/jekyll/start-mini.png){: .img-responsive .img-centered}
 
 **Please Note:** Rubby 버전에 따라 안되는 케이스가 발생하여 2.5.7로 진행하였습니다. 로컬 서버 포트를 4000에서 다른것으로 바꾸고 싶다면 # jekyll serve --port {원하는 포트 번호} 명령어로 서버를 실행하면 됩니다.
 {: .notice--danger}
 
-**Tip:** 기존 로비가 설치되어있고 플러그인 의존성 이슈가 발생하여 특정 버전은 안된다고 나온다면 아래와 같은 명령어로 전체 삭제 후 플러그인 재설치를 해주면 됩니다. <br>
-**# gem uninstall -aIx ( 설치된 플러그인 전체 삭제 명령어 )**<br>
-**# gem uninstall { 충돌한 플러그인 명 } ( 특정 플러그인 삭제 명령어  )**<br>
+**Tip:** 기존 로비가 설치되어있고 플러그인 의존성 이슈가 발생하여 특정 버전은 안된다고 나온다면 아래와 같은 명령어로 전체 삭제 후 플러그인 재설치를 해주면 됩니다.  
+**# gem uninstall -aIx ( 설치된 플러그인 전체 삭제 명령어 )**  
+**# gem uninstall { 충돌한 플러그인 명 } ( 특정 플러그인 삭제 명령어  )**
 {: .notice--info}
-
+  
 이제 Git에 push를 진행하기 전에 압축 해제한 파일 중 불필요한 파일들을 삭제하겠습니다. 
 ```
 .github
@@ -98,11 +96,11 @@ push를 진행하면 이제 https://{GitID}.github.io 주소로 같은 화면을
 ## Step 4: Sample 게시물 확인
 
 이전에 이동했덩 docs폴더안 _post폴더를  우리 _post에 덮어 씌운 후  jekyll 서버를 재시작 합니다.  그렇다면 이제   [http://localhost:4000/ ]({{"http://localhost:4000/"}}){:target="_blank"}에서  블로그 게시물 디자인에 참고할 만한  다양한 샘플 포스트를 확인할 수 있습니다.
-![Ruby Setting 확인]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/sample-post.png){: .align-center}
+![Ruby Setting 확인](/img/{{ page.url }}/jekyll/sample-post.png){: .img-responsive .img-centered}
 
 블로그 게시물에 대한 네이밍 규칙은 YEAR-MONTH-DAY-title.md입니다. 추후 _post폴더 아래에 게시물을 작성할 때 해당 형식을 지켜 작성해야합니다. 
 
-**Please Note** <br>
+**Please Note**  
 필자는 블로그 페이지 작성이 목적이라  .md파일 작성법 및  Jekyll에 대해 깊게 포스팅 하지 않겠습니다.  .yml로 된 파일이나  .md 같은 markdown언어에 대해서 공부하고 싶을 경우를 대비하여 공식 사이트 주소는 남겨드리겠습니다. <br> 
 YAML :  [ https://yaml.org/ ]({{" https://yaml.org/"}}){:target="_blank"} <br>
 Liquid 문법 : [https://shopify.github.io/liquid/ ]({{"https://shopify.github.io/liquid/"}}){:target="_blank"} <br>
@@ -125,8 +123,6 @@ Jekyll 폴더구조 :  [https://jekyllrb-ko.github.io/docs/structure/ ]({{"https
 [https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml]({{"https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml"}}){:target="_blank"} 
 
 ```java
-
-
 minimal_mistakes_skin    : "default" # 태마 색 설정 "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" 
 
 # Site Settings
@@ -218,7 +214,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-
 ```
 
 **Tip:** config.yml  설정에 대한 공식 사이트<br>
@@ -245,7 +240,7 @@ main:
     url: /posts/
 ```
 
-####   _pages 폴더  및 필요한 .md파일 생성
+#### _pages 폴더  및 필요한 .md파일 생성
 이제 카테고리, 테그, about 등 필요한 페이지 정보들을 삽입합니다. 요약해서 말하면 permalink에 쓰여진 url로 요청이 들어오면 layout에 지정된 즉 _layout에 존재하는 {파일명}.html을 불러와 삽입합니다.
 [https://github.com/7271kim/7271kim.github.com/tree/master/_pages]({{"https://github.com/7271kim/7271kim.github.com/tree/master/_pages"}}){:target="_blank"} <br>
 <br>
@@ -258,10 +253,9 @@ layout: categories
 permalink: /categories/
 author_profile: true
 ---
-
 ```
 
-####  _config.yml 수정
+#### _config.yml 수정
 하단 defaults: 부분에 _pages 부분을 추가합니다. 
 [https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml]({{"https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml"}}){:target="_blank"} 
 
@@ -351,18 +345,21 @@ cmd창에서 해당 명령어 실행합니다.
 ```
 이제  [http://localhost:4000/admin/]({{"http://localhost:4000/admin/"}}){:target="_blank"} 으로 접근 가능하며 게시물을 쉽게 작성하고 수정할 수 있습니다.
 
-![admin Setting 확인]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/admin.png){: .align-center}
+![admin Setting 확인](/img/{{ page.url }}/jekyll/admin.png){: .img-responsive .img-centered}
 
 ---
 
 ## Step 7: 도메인 연결
 
-구매한 도메인이 있어 http://{깃헙id}.github.io/ 형식이 아닌 자신이 구매한 도메인으로 연결하는 방법을 공유하겠습니다. 우선 자신 Repository의 Settings로 접속합니다. ( https://github.com/{깃헙 id}/{Repository}/settings) 이제 중반 GitHub Pages 옵션 중 Custom domain부분에 자신이 구매한 Domain주소를 작성합니다.
-![도메인 연결]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/domain.png){: .align-center}
-이미지 중 Custom domain 옆 [Learn more]({{"https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site"}}){:target="_blank"}을 눌러보면  관련된 정보를 획득할 수 있습니다. 이 중  [Managing a custom domain for your GitHub Pages site]({{"https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site"}}){:target="_blank"} 내용 중  중반 ALIAS설정하는 방법이 나와있습니다.
-![admin Setting 확인]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/alias.png){: .align-center}
+구매한 도메인이 있어 http://{깃헙id}.github.io/ 형식이 아닌 자신이 구매한 도메인으로 연결하는 방법을 공유하겠습니다. 우선 자신 Repository의 Settings로 접속합니다.  
+(https://github.com/{깃헙 id}/{Repository}/settings)  
+이제 중반 GitHub Pages 옵션 중 Custom domain부분에 자신이 구매한 Domain주소를 작성합니다.
+![도메인 연결](/img/{{ page.url }}/jekyll/domain.png){: .img-responsive .img-centered}  
+이미지 중 Custom domain 옆 [Learn more]({{"https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site"}}){:target="_blank"}을 눌러보면  관련된 정보를 획득할 수 있습니다.  
+이 중 [Managing a custom domain for your GitHub Pages site]({{"https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site"}}){:target="_blank"} 내용 중 중반 ALIAS설정하는 방법이 나와있습니다.  
+![admin Setting 확인](/img/{{ page.url }}/jekyll/alias.png){: .img-responsive .img-centered}  
 해당 A 레코드를  도메인을 구매한 사이트에 세팅해줍니다. 필자는 가비아를 사용하여 해당과 같이 수정진행 하였습니다. 
-![가비아 Setting 확인]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/gabia.png){: .align-center}
+![가비아 Setting 확인](/img/{{ page.url }}/jekyll/gabia.png){: .img-responsive .img-centered}
 
 ---
 
@@ -372,41 +369,41 @@ cmd창에서 해당 명령어 실행합니다.
 
 ### MakerWidget 세팅
 [https://makerwidget.com]({{"https://makerwidget.com"}}){:target="_blank"}에서 회원 가입을 진행합니다. 이후 LINK LISTS , PROJECTS등 원하는 부분을 작성하고 SAVE합니다. 
-![MakerWidget 세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/marker-widget.png){: .align-center}
+![MakerWidget 세팅](/img/{{ page.url }}/jekyll/marker-widget.png){: .img-responsive .img-centered}
 최종적으로 저장 후 EMBED WIDGET을 확인합니다. 
-![MakerWidget 세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/marker-widget2.png){: .align-center}
+![MakerWidget 세팅](/img/{{ page.url }}/jekyll/marker-widget2.png){: .img-responsive .img-centered}
 해당 스크립트를 프로젝트 js에 적어주시면 바로 적용됩니다. 
 
 ### Disqus 세팅
 게시물에 댓글을 달 수있게 기능을 제공하는 Disqus는 유로인 경우도 있지만 무료서비스 중 Non-Commercial(Under 5,000 total daily pageviews)로 선택한다면 무료로 사용 가능합니다. 우선 
-[https://disqus.com/]({{"https://disqus.com/"}}){:target="_blank"}에서 회원가입을 진행합니다.
-![DisQue 세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/disque.png){: .align-center}
-![DisQue 세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/disque2.png){: .align-center}
-![DisQue 세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/disque3.png){: .align-center}
-![DisQue 세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/disque4.png){: .align-center}
+[https://disqus.com/]({{"https://disqus.com/"}}){:target="_blank"}에서 회원가입을 진행합니다.  
+![DisQue 세팅](/img/{{ page.url }}/jekyll/disque.png){: .img-responsive .img-centered}
+![DisQue 세팅](/img/{{ page.url }}/jekyll/disque2.png){: .img-responsive .img-centered}
+![DisQue 세팅](/img/{{ page.url }}/jekyll/disque3.png){: .img-responsive .img-centered}
+![DisQue 세팅](/img/{{ page.url }}/jekyll/disque4.png){: .img-responsive .img-centered}
 
-회원가입이 완료되셨다면  이제 _config.yml을 수정해 줍니다.  provider에  disqus를 추가해주고  shortname에  가입시 작성하였던 Website Name을 적어주시면 됩니다.
+회원가입이 완료되셨다면 이제 _config.yml을 수정해 줍니다. provider에  disqus를 추가해주고 shortname에 가입시 작성하였던 Website Name을 적어주시면 됩니다.
 
 [https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml]({{"https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml"}}){:target="_blank"} 
 
 ```
 # 댓글 관련 부분
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : 7271kim # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: 7271kim # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 		
 ```
 
-![DisQue 세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/disque5.png){: .align-center}
+![DisQue 세팅](/img/{{ page.url }}/jekyll/disque5.png){: .img-responsive .img-centered}
 
 ---
 
 ## Step 9: 구글 검색 가능하게 하기
 
 게시글에 대해 구글 검색이 가능하게 하고 싶다면 [Google Search Console]({{"https://search.google.com/search-console/about?hl=ko&utm_source=wmx&utm_medium=wmx-welcome"}}){:target="_blank"}을 통해 등록을  진행해야 합니다.  좌측은 구매한 도메인이 있을때 사용하며 하나의 도메인 등록을 통해 모든 서브도메인을 통합 관리하는 방식입니다. 우측(URL prefix)은 일반적인 GitBlog일 때입니다. 우선 우측 URL prefix 방식을 통해 먼저 진행하겠습니다. URL에  http://7271kim.github.io/ 통째로 적습니다.
-![Google세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist.png){: .align-center}
-![Google세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist2.png){: .align-center}
+![Google세팅](/img/{{ page.url }}/jekyll/google-regist.png){: .img-responsive .img-centered}
+![Google세팅](/img/{{ page.url }}/jekyll/google-regist2.png){: .img-responsive .img-centered}
 
 이제 블로그 도메인에 대한 소유권 인증을 진행해야 합니다. 사이트에 소유권자만이 구글 검색에 대해 허가를 내줄 수 있기 때문입니다. 소유권 확인을 위한 html파일을 다운로드 한 후 index.html페이지 위치에 올린 후 push합니다. 정상적으로 push가 되었다면 이제 Verify 혹은 확인 버튼을 클릭하여 소유권 인증을 마무리합니다. 아직은 아무 정보가 없어 웹사이트 유입현황이나 정보를 취득하지 못합니다. 물론 검색도 되지 않습니다. 구글 검색 엔진이 웹사이트를 읽어가는 작업이 진행되어야 검색이 노출되는데 이를 크롤링이라 합니다. 정상적인 크롤링을 위해서는 sitemap.xml과 robots.txt이 필요합니다. 
 
@@ -456,17 +453,17 @@ Disallow: /hello/<br><br>
 
 ### Google에 sitemap.xml등록 
  [Google Search Console]({{"https://search.google.com/search-console"}}){:target="_blank"}페이지 메뉴 중 sitemaps에 들어가서 생성한 sitemap.xml을 제출합니다. 
-![Google세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist6.png){: .align-center} 
+![Google세팅](/img/{{ page.url }}/jekyll/google-regist6.png){: .img-responsive .img-centered} 
 
 **Please Note:** sitemap까지 등록되었다면 검색 노출까지 일주일 정도 기간이 걸린다고 합니다.
 {: .notice--danger}
 
 이제 좌측 도메인 등록방법을 설명하겠습니다.  http를 제외한 도메인 주소를 작성합니다. 필자의 도메인 주소인 honbabzone.com을 적어준 후 TXT를 얻습니다.<br><br>
-![Google세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist3.png){: .align-center}<br>
-![Google세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist4.png){: .align-center}<br>
+![Google세팅](/img/{{ page.url }}/jekyll/google-regist3.png){: .img-responsive .img-centered}<br>
+![Google세팅](/img/{{ page.url }}/jekyll/google-regist4.png){: .img-responsive .img-centered}<br>
 
 해당 텍스트를 도메인 설정에 등록합니다. 
-![Google세팅]({{ site.url }}{{ site.baseurl }}/assets/images/post/2020/08/23/2020-08-23-pros-and-cons-using-github-blog/jekyll/google-regist5.png){: .align-center}
+![Google세팅](/img/{{ page.url }}/jekyll/google-regist5.png){: .img-responsive .img-centered}
 
 10분정도 시간이 지난 후 도메인 소유권 확인을 누르면 도메인 인증이 됩니다.
 
