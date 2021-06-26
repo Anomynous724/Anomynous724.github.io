@@ -2,7 +2,8 @@
 title: Pros & Cons of Blog
 subtitle: Website Design
 layout: post_detail
-date: 2020-08-23
+date-created: 2020-08-23
+date-edited: 2021-06-07
 img: dreams.png
 thumbnail: 2020-08-23-pros-and-cons-using-github-blog-thumbnail.jpg
 alt: image-alt
