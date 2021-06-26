@@ -15,9 +15,9 @@ description: First Step of Github Blog
 
 ---
 
-## Step 1:  깃 블로그란
+## Step 1: 깃 블로그란
 
-깃 블로그란  Github 저장소에 저장된 html 파일과 같은 정적 웹 문서들을 GitHub에서 무료로 웹에서 볼 수 있도록 호스팅 서비스(github pages)를 제공해 주는 것입니다. 
+깃 블로그란 Github 저장소에 저장된 html 파일과 같은 정적 웹 문서들을 GitHub에서 무료로 웹에서 볼 수 있도록 호스팅 서비스(github pages)를 제공해 주는 것입니다. 
 때문에 Github을 이용하는 사용자들은 **누구나 고유의 정적 웹 사이트 1개를 가질 수 있습니다.** 계정이 없다면 [Github](https://github.com/){:target="_blank"}에서 Github 계정 생성합니다.
 계정을 만들고 신규 Repository를 **{Git ID}.github.com** 으로 세팅합니다. 
 
@@ -46,7 +46,7 @@ https://github.com/{ Git ID }/{ Repository 이름 }/settings
 * [https://jekyllthemes.io/]({{"https://jekyllthemes.io/"}}){:target="_blank"}
 
 필자의 선택은 꾸준한 업데이트가 강점인 [https://github.com/mmistakes/minimal-mistakes]({{"https://github.com/mmistakes/minimal-mistakes"}}){:target="_blank"}테마를 선택하였습니다. ReadMe.md파일 안에 해당 테마에 대한 자세한 사용 방법이 기술되어 있습니다.  
-테마를 Fork뜨거나 Download합니다.  필자는 Fork시 GitHub 녹색 잔디가 심어지지 않아 다운로드 후  작업하였습니다. 
+테마를 Fork뜨거나 Download합니다. 필자는 Fork시 GitHub 녹색 잔디가 심어지지 않아 다운로드 후 작업하였습니다. 
 
 ![Fork확인](/img/{{ page.url }}/jekyll/fork.png){: .img-responsive .img-centered}
 
@@ -74,11 +74,11 @@ Jekyll은 하나의 동적 객체 지향 스크립트 프로그래밍 언어인 
 **Please Note:** Rubby 버전에 따라 안되는 케이스가 발생하여 2.5.7로 진행하였습니다. 로컬 서버 포트를 4000에서 다른것으로 바꾸고 싶다면 # jekyll serve --port {원하는 포트 번호} 명령어로 서버를 실행하면 됩니다.
 {: .notice--danger}
 
-**Tip:** 기존 로비가 설치되어있고 플러그인 의존성 이슈가 발생하여 특정 버전은 안된다고 나온다면 아래와 같은 명령어로 전체 삭제 후 플러그인 재설치를 해주면 됩니다.  
-**# gem uninstall -aIx ( 설치된 플러그인 전체 삭제 명령어 )**  
-**# gem uninstall { 충돌한 플러그인 명 } ( 특정 플러그인 삭제 명령어  )**
+**Tip:** 기존 로비가 설치되어있고 플러그인 의존성 이슈가 발생하여 특정 버전은 안된다고 나온다면 아래와 같은 명령어로 전체 삭제 후 플러그인 재설치를 해주면 됩니다. 
+**# gem uninstall -aIx ( 설치된 플러그인 전체 삭제 명령어 )** 
+**# gem uninstall { 충돌한 플러그인 명 } ( 특정 플러그인 삭제 명령어 )**
 {: .notice--info}
-  
+ 
 이제 Git에 push를 진행하기 전에 압축 해제한 파일 중 불필요한 파일들을 삭제하겠습니다. 
 ```
 .github
@@ -87,7 +87,7 @@ test
 .gitattributes
 .travis.yml
 CHANGELOG.md
-docs( 샘플 파일들이 들어가 있는  폴더로 우선 나중을 위해 다른 곳으로 옮겨줍니다. )
+docs( 샘플 파일들이 들어가 있는 폴더로 우선 나중을 위해 다른 곳으로 옮겨줍니다. )
 ```
 push를 진행하면 이제 https://{GitID}.github.io 주소로 같은 화면을 볼 수 있습니다. 
 
@@ -95,16 +95,16 @@ push를 진행하면 이제 https://{GitID}.github.io 주소로 같은 화면을
 
 ## Step 4: Sample 게시물 확인
 
-이전에 이동했덩 docs폴더안 _post폴더를  우리 _post에 덮어 씌운 후  jekyll 서버를 재시작 합니다.  그렇다면 이제   [http://localhost:4000/ ]({{"http://localhost:4000/"}}){:target="_blank"}에서  블로그 게시물 디자인에 참고할 만한  다양한 샘플 포스트를 확인할 수 있습니다.
+이전에 이동했덩 docs폴더안 _post폴더를 우리 _post에 덮어 씌운 후 jekyll 서버를 재시작 합니다. 그렇다면 이제 [http://localhost:4000/ ]({{"http://localhost:4000/"}}){:target="_blank"}에서 블로그 게시물 디자인에 참고할 만한 다양한 샘플 포스트를 확인할 수 있습니다.
 ![Ruby Setting 확인](/img/{{ page.url }}/jekyll/sample-post.png){: .img-responsive .img-centered}
 
 블로그 게시물에 대한 네이밍 규칙은 YEAR-MONTH-DAY-title.md입니다. 추후 _post폴더 아래에 게시물을 작성할 때 해당 형식을 지켜 작성해야합니다. 
 
-**Please Note**  
-필자는 블로그 페이지 작성이 목적이라  .md파일 작성법 및  Jekyll에 대해 깊게 포스팅 하지 않겠습니다.  .yml로 된 파일이나  .md 같은 markdown언어에 대해서 공부하고 싶을 경우를 대비하여 공식 사이트 주소는 남겨드리겠습니다. <br> 
-YAML :  [ https://yaml.org/ ]({{" https://yaml.org/"}}){:target="_blank"} <br>
+**Please Note** 
+필자는 블로그 페이지 작성이 목적이라 .md파일 작성법 및 Jekyll에 대해 깊게 포스팅 하지 않겠습니다. .yml로 된 파일이나 .md 같은 markdown언어에 대해서 공부하고 싶을 경우를 대비하여 공식 사이트 주소는 남겨드리겠습니다. <br> 
+YAML : [ https://yaml.org/ ]({{" https://yaml.org/"}}){:target="_blank"} <br>
 Liquid 문법 : [https://shopify.github.io/liquid/ ]({{"https://shopify.github.io/liquid/"}}){:target="_blank"} <br>
-Jekyll 폴더구조 :  [https://jekyllrb-ko.github.io/docs/structure/ ]({{"https://jekyllrb-ko.github.io/docs/structure/"}}){:target="_blank"} <br>
+Jekyll 폴더구조 : [https://jekyllrb-ko.github.io/docs/structure/ ]({{"https://jekyllrb-ko.github.io/docs/structure/"}}){:target="_blank"} <br>
 {: .notice--info}
 
 `# gem install bundler`
@@ -119,35 +119,35 @@ Jekyll 폴더구조 :  [https://jekyllrb-ko.github.io/docs/structure/ ]({{"https
 
 ### _config.yml 수정
 
-지킬 테마에서 자신의 블로그 페이지에 맞게 커스텀 하기위해 _config.yml 을 수정하였습니다.  웹에대한 기본 지식이 있다면 어디를 수정하면 어디가 반영 될 지 직관적으로 알 수 있게 되어있습니다.  꼭 수정해 주어야 하는 부분만 포스팅 하고 이 외 수정한 부분은 아래 주소에서 확인하시기 바랍니다.
+지킬 테마에서 자신의 블로그 페이지에 맞게 커스텀 하기위해 _config.yml 을 수정하였습니다. 웹에대한 기본 지식이 있다면 어디를 수정하면 어디가 반영 될 지 직관적으로 알 수 있게 되어있습니다. 꼭 수정해 주어야 하는 부분만 포스팅 하고 이 외 수정한 부분은 아래 주소에서 확인하시기 바랍니다.
 [https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml]({{"https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml"}}){:target="_blank"} 
 
 ```java
-minimal_mistakes_skin    : "default" # 태마 색 설정 "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" 
+minimal_mistakes_skin: "default" # 태마 색 설정 "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" 
 
 # Site Settings
-locale                   : "ko-KR"
-title                    : "JAVA Blog" # Meta 태그에 들어가는 영역 , masthead_title등이 없으면 기본값으로 나온다.
-title_separator          : "&#124;" # 타이틀 사이 구분자 <title>Welcome to Jekyll | Minimal Mistakes</title> 해당 형식으로 들어갑니다.
-subtitle                 : "Version 1.0" # 타이틀 아래에 나올 작은 글씨 
-name                     : "김석진" # 맨 하단 이름 찍히는 영역
-description              : "JAVA와 Spring Boot 혹은 Sever등 다양한 개발을 공부하는 블로그" # Meta 태그에 들어가는 영역 
-url                      : "https://7271kim.github.io/" # GitBlog 호스트 주소
-baseurl                  : # subPath https://7271kim.github.io/blog라고 하고 싶을 시 "/blog" 라고 적는다.
-repository               : "7271kim/7271kim.github.com" # GitHub username/repo-name  
-teaser                   : # "/assets/images/senior-couple-4723737_640.jpg" # 홈페이지 기본 티져 이미지
-logo                     : # 타이틀 옆에 작게 들어갈 이미지.
-masthead_title           : "기록하는 개발자 Blog" # 홈페이지 최 상탄에 들어갈 타이틀
-breadcrumbs              : true # 브래드크럼 사용 여부 true, false (default) , _data/ui-text.yml에 다국어 지원 가능합니다.
-words_per_minute         : 200 # 해당 포스트 읽는데 걸리는 시간을 계산하기 위해 대락 분당 읽는 수가 몇글자가 될지 적는 공간.
+locale: "ko-KR"
+title: "JAVA Blog" # Meta 태그에 들어가는 영역 , masthead_title등이 없으면 기본값으로 나온다.
+title_separator: "&#124;" # 타이틀 사이 구분자 <title>Welcome to Jekyll | Minimal Mistakes</title> 해당 형식으로 들어갑니다.
+subtitle: "Version 1.0" # 타이틀 아래에 나올 작은 글씨 
+name: "김석진" # 맨 하단 이름 찍히는 영역
+description: "JAVA와 Spring Boot 혹은 Sever등 다양한 개발을 공부하는 블로그" # Meta 태그에 들어가는 영역 
+url: "https://7271kim.github.io/" # GitBlog 호스트 주소
+baseurl: # subPath https://7271kim.github.io/blog라고 하고 싶을 시 "/blog" 라고 적는다.
+repository: "7271kim/7271kim.github.com" # GitHub username/repo-name
+teaser: # "/assets/images/senior-couple-4723737_640.jpg" # 홈페이지 기본 티져 이미지
+logo: # 타이틀 옆에 작게 들어갈 이미지.
+masthead_title: "기록하는 개발자 Blog" # 홈페이지 최 상탄에 들어갈 타이틀
+breadcrumbs: true # 브래드크럼 사용 여부 true, false (default) , _data/ui-text.yml에 다국어 지원 가능합니다.
+words_per_minute: 200 # 해당 포스트 읽는데 걸리는 시간을 계산하기 위해 대락 분당 읽는 수가 몇글자가 될지 적는 공간.
 
 # Site Author
 author:
-  name             : "김석진" 
-  avatar           : "/assets/images/profile/poto.jpg" # 프로필 이미지
-  bio              : "꾸준히 공부하는 개발자입니다. <br> 블로그 포스트 글에서 잘못된 부분이나 수정했으면 하는 부분, 적극적으로 댓글 남겨주신다면 감사하겠습니다."
-  location         : "Republic of Korea"
-  email            : "7271kim@naver.com"
+  name: "김석진" 
+  avatar: "/assets/images/profile/poto.jpg" # 프로필 이미지
+  bio: "꾸준히 공부하는 개발자입니다. <br> 블로그 포스트 글에서 잘못된 부분이나 수정했으면 하는 부분, 적극적으로 댓글 남겨주신다면 감사하겠습니다."
+  location: "Republic of Korea"
+  email: "7271kim@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -216,13 +216,13 @@ defaults:
       author_profile: true
 ```
 
-**Tip:** config.yml  설정에 대한 공식 사이트<br>
+**Tip:** config.yml 설정에 대한 공식 사이트<br>
 [https://mmistakes.github.io/minimal-mistakes/docs/configuration/ ]({{"https://mmistakes.github.io/minimal-mistakes/docs/configuration/"}}){:target="_blank"} 
 {: .notice--info}
 
 
 ### navigation 설정
-기본 파일은 상단 네비게이션 설정이 되어있지 않습니다. _data/navigation.yml, _config.yml 파일, _pages를 수정하여  Categories, Tag, About이 노출되도록 해보겠습니다.
+기본 파일은 상단 네비게이션 설정이 되어있지 않습니다. _data/navigation.yml, _config.yml 파일, _pages를 수정하여 Categories, Tag, About이 노출되도록 해보겠습니다.
 
 #### _data/navigation.yml 수정
 원하는 네비게이션 url을 설정해 줍니다. http://naver.com과 같이 상대경로가 아닌 절대경로도 가능합니다. 
@@ -240,7 +240,7 @@ main:
     url: /posts/
 ```
 
-#### _pages 폴더  및 필요한 .md파일 생성
+#### _pages 폴더 및 필요한 .md파일 생성
 이제 카테고리, 테그, about 등 필요한 페이지 정보들을 삽입합니다. 요약해서 말하면 permalink에 쓰여진 url로 요청이 들어오면 layout에 지정된 즉 _layout에 존재하는 {파일명}.html을 불러와 삽입합니다.
 [https://github.com/7271kim/7271kim.github.com/tree/master/_pages]({{"https://github.com/7271kim/7271kim.github.com/tree/master/_pages"}}){:target="_blank"} <br>
 <br>
@@ -333,7 +333,7 @@ scss문법을 설명하지 않겠습니다. 다만 "/_sass/custom" 위치에 원
 
 ## Step 6: Admin 세팅
 
-게시글을  md문법으로 작성하면 되지만 뭔가 불편하여 찾아보니 admin페이지를 통해 쉽게 게시글을 작성할 수 있다는 것을 알게 되어 방법을 공유합니다. 세팅하는 방법은 간단합니다. Gemfile파일 안에 해당 부분을 작성합니다. 
+게시글을 md문법으로 작성하면 되지만 뭔가 불편하여 찾아보니 admin페이지를 통해 쉽게 게시글을 작성할 수 있다는 것을 알게 되어 방법을 공유합니다. 세팅하는 방법은 간단합니다. Gemfile파일 안에 해당 부분을 작성합니다. 
 [https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile]({{"https://github.com/7271kim/7271kim.github.com/blob/master/Gemfile"}}){:target="_blank"}
 ```
 gem 'jekyll-admin', group: :jekyll_plugins
@@ -343,7 +343,7 @@ cmd창에서 해당 명령어 실행합니다.
 # bundle install
 # jekyll serve 
 ```
-이제  [http://localhost:4000/admin/]({{"http://localhost:4000/admin/"}}){:target="_blank"} 으로 접근 가능하며 게시물을 쉽게 작성하고 수정할 수 있습니다.
+이제 [http://localhost:4000/admin/]({{"http://localhost:4000/admin/"}}){:target="_blank"} 으로 접근 가능하며 게시물을 쉽게 작성하고 수정할 수 있습니다.
 
 ![admin Setting 확인](/img/{{ page.url }}/jekyll/admin.png){: .img-responsive .img-centered}
 
@@ -358,7 +358,7 @@ cmd창에서 해당 명령어 실행합니다.
 이미지 중 Custom domain 옆 [Learn more]({{"https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site"}}){:target="_blank"}을 눌러보면  관련된 정보를 획득할 수 있습니다.  
 이 중 [Managing a custom domain for your GitHub Pages site]({{"https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site"}}){:target="_blank"} 내용 중 중반 ALIAS설정하는 방법이 나와있습니다.  
 ![admin Setting 확인](/img/{{ page.url }}/jekyll/alias.png){: .img-responsive .img-centered}  
-해당 A 레코드를  도메인을 구매한 사이트에 세팅해줍니다. 필자는 가비아를 사용하여 해당과 같이 수정진행 하였습니다. 
+해당 A 레코드를 도메인을 구매한 사이트에 세팅해줍니다. 필자는 가비아를 사용하여 해당과 같이 수정진행 하였습니다. 
 ![가비아 Setting 확인](/img/{{ page.url }}/jekyll/gabia.png){: .img-responsive .img-centered}
 
 ---
@@ -376,13 +376,13 @@ cmd창에서 해당 명령어 실행합니다.
 
 ### Disqus 세팅
 게시물에 댓글을 달 수있게 기능을 제공하는 Disqus는 유로인 경우도 있지만 무료서비스 중 Non-Commercial(Under 5,000 total daily pageviews)로 선택한다면 무료로 사용 가능합니다. 우선 
-[https://disqus.com/]({{"https://disqus.com/"}}){:target="_blank"}에서 회원가입을 진행합니다.  
+[https://disqus.com/]({{"https://disqus.com/"}}){:target="_blank"}에서 회원가입을 진행합니다. 
 ![DisQue 세팅](/img/{{ page.url }}/jekyll/disque.png){: .img-responsive .img-centered}
 ![DisQue 세팅](/img/{{ page.url }}/jekyll/disque2.png){: .img-responsive .img-centered}
 ![DisQue 세팅](/img/{{ page.url }}/jekyll/disque3.png){: .img-responsive .img-centered}
 ![DisQue 세팅](/img/{{ page.url }}/jekyll/disque4.png){: .img-responsive .img-centered}
 
-회원가입이 완료되셨다면 이제 _config.yml을 수정해 줍니다. provider에  disqus를 추가해주고 shortname에 가입시 작성하였던 Website Name을 적어주시면 됩니다.
+회원가입이 완료되셨다면 이제 _config.yml을 수정해 줍니다. provider에 disqus를 추가해주고 shortname에 가입시 작성하였던 Website Name을 적어주시면 됩니다.
 
 [https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml]({{"https://github.com/7271kim/7271kim.github.com/blob/master/_config.yml"}}){:target="_blank"} 
 
@@ -401,7 +401,7 @@ comments:
 
 ## Step 9: 구글 검색 가능하게 하기
 
-게시글에 대해 구글 검색이 가능하게 하고 싶다면 [Google Search Console]({{"https://search.google.com/search-console/about?hl=ko&utm_source=wmx&utm_medium=wmx-welcome"}}){:target="_blank"}을 통해 등록을  진행해야 합니다.  좌측은 구매한 도메인이 있을때 사용하며 하나의 도메인 등록을 통해 모든 서브도메인을 통합 관리하는 방식입니다. 우측(URL prefix)은 일반적인 GitBlog일 때입니다. 우선 우측 URL prefix 방식을 통해 먼저 진행하겠습니다. URL에  http://7271kim.github.io/ 통째로 적습니다.
+게시글에 대해 구글 검색이 가능하게 하고 싶다면 [Google Search Console]({{"https://search.google.com/search-console/about?hl=ko&utm_source=wmx&utm_medium=wmx-welcome"}}){:target="_blank"}을 통해 등록을 진행해야 합니다. 좌측은 구매한 도메인이 있을때 사용하며 하나의 도메인 등록을 통해 모든 서브도메인을 통합 관리하는 방식입니다. 우측(URL prefix)은 일반적인 GitBlog일 때입니다. 우선 우측 URL prefix 방식을 통해 먼저 진행하겠습니다. URL에 http://7271kim.github.io/ 통째로 적습니다.
 ![Google세팅](/img/{{ page.url }}/jekyll/google-regist.png){: .img-responsive .img-centered}
 ![Google세팅](/img/{{ page.url }}/jekyll/google-regist2.png){: .img-responsive .img-centered}
 
@@ -448,7 +448,7 @@ Disallow: /<br><br>
 만약 구글 로봇만 차단시키고 싶다면 User-agent에 * 부분을 Googlebot으로 변경하여 설정<br>
 User-agent: Yeti<br>
 Disallow: /hello/<br><br>
-이렇게 설정하면 웹사이트의 모든 콘텐츠의 네이버 검색로봇의 크롤링을 허용하되, /hello/  디렉토리 안의 페이지에 대한 접근만 차단한다는 의미
+이렇게 설정하면 웹사이트의 모든 콘텐츠의 네이버 검색로봇의 크롤링을 허용하되, /hello/ 디렉토리 안의 페이지에 대한 접근만 차단한다는 의미
 {: .notice--info}
 
 ### Google에 sitemap.xml등록 
@@ -458,7 +458,7 @@ Disallow: /hello/<br><br>
 **Please Note:** sitemap까지 등록되었다면 검색 노출까지 일주일 정도 기간이 걸린다고 합니다.
 {: .notice--danger}
 
-이제 좌측 도메인 등록방법을 설명하겠습니다.  http를 제외한 도메인 주소를 작성합니다. 필자의 도메인 주소인 honbabzone.com을 적어준 후 TXT를 얻습니다.<br><br>
+이제 좌측 도메인 등록방법을 설명하겠습니다. http를 제외한 도메인 주소를 작성합니다. 필자의 도메인 주소인 honbabzone.com을 적어준 후 TXT를 얻습니다.<br><br>
 ![Google세팅](/img/{{ page.url }}/jekyll/google-regist3.png){: .img-responsive .img-centered}<br>
 ![Google세팅](/img/{{ page.url }}/jekyll/google-regist4.png){: .img-responsive .img-centered}<br>
 
