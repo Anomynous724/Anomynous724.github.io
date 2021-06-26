@@ -9,6 +9,7 @@ thumbnail: 2021-05-07-diary-thumbnail.jpg
 alt: image-alt
 category: Post
 description: Diary-2021-05-07
+comments: true
 ---
 
 ### 오늘 한일 2021-05-07

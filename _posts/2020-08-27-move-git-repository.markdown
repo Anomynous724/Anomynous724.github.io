@@ -9,6 +9,7 @@ thumbnail: 2020-08-27-move-git-repository-thumbnail.jpg
 alt: image-alt
 category: Post
 description: How to move a full Git repository with Commit history
+comments: true
 ---
 
 # 내 저장소에 있는 모든 파일들을 통째로 다른 repository로 옮기고 싶을 때! - Github

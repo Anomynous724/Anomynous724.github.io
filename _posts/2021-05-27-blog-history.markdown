@@ -9,6 +9,7 @@ thumbnail: 2021-05-27-blog-history-thumbnail.jpg
 alt: image-alt
 category: [Post, Blog]
 description: Blog History
+comments: true
 ---
 
 ### Blog History

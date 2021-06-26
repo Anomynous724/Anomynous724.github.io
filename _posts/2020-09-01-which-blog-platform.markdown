@@ -9,6 +9,7 @@ thumbnail: 2020-09-01-which-of-each-blog-platform-thumbnail.jpg
 alt: image-alt
 category: Post
 description: Pros & Cons of each Blog platforms
+comments: true
 ---
 
 나는 게으른 사람이다. 그래도 가끔은 기록을 하려 블로그를 운영했었다.

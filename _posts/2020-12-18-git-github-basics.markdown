@@ -9,6 +9,7 @@ thumbnail: 2020-12-18-git-github-basics-thumbnail.jpg
 alt: image-alt
 category: Post
 description: Git & Github Basics
+comments: true
 ---
 
 ### Git이란?

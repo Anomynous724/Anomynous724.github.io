@@ -8,6 +8,7 @@ thumbnail: 2021-06-06-how-to-solve-a-problem-thumbnail.jpg
 alt: image-alt
 category: [Post, Skills]
 description: Improving Problem Solving Skill
+comments: true
 ---
 
 문제인식 2021-06-06

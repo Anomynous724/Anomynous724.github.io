@@ -14,6 +14,7 @@ project-start-date: 2021-03-12
 project-end-date: Ongoing
 category: Portfolio
 description: First Project / Front-End / Booking System / Multi-Language Website
+comments: true
 ---
 
 # RIUM SALON WEBSITE

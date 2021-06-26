@@ -9,6 +9,7 @@ thumbnail: 2020-08-26-commit-message-guidelines-thumbnail.jpg
 alt: image-alt
 category: Post
 description: Commit Message Guidelines
+comments: true
 ---
 
 # Commit Message Guidelines

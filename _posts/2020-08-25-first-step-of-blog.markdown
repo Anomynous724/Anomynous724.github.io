@@ -9,6 +9,7 @@ thumbnail: 2020-08-25-first-step-of-blog-thumbnail.jpg
 alt: image-alt
 category: [Post, Blog]
 description: First Step of Github Blog
+comments: true
 ---
 
 # First Step of Github Pages Blog
