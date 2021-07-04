@@ -1,135 +1,54 @@
+---
+layout : null
+---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
-<!-- www.check-domains.com sitemap generator -->
-
-<url>
-   <loc>https://youcancallmej.github.io/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>1.0000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/about_detail/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/portfolio_all/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/post/skills/how-to-solve-a-problem/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/post/blog/blog-history/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/post/diary/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/post/git-github-basics/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/post/which-blog-platform/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/post/move-git-repository/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/post_all/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/portfolio/project-rium-salon-website/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/portfolio/project-2/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/portfolio/project-3/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/portfolio/project-4/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/portfolio/project-5/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/portfolio/project-6/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/biography_detail/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.6400</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/contact_detail/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.6400</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/post/commit-message-guidelines/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.6400</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/post/blog/first-step-of-blog/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.6400</priority>
-</url>
-<url>
-   <loc>https://youcancallmej.github.io/post/pros-and-cons-using-github-blog/</loc>
-   <lastmod>2021-06-26T07:44:37+00:00</lastmod>
-   <changefreq>always</changefreq>
-   <priority>0.6400</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in site.posts %}
+    {% unless post.published == false %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}.html</loc>
+      {% if post.sitemap.lastmod %}
+        <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+      {% elsif post.date %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if post.sitemap.changefreq %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+      {% else %}
+        <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if post.sitemap.priority %}
+        <priority>{{ post.sitemap.priority }}</priority>
+      {% else %}
+        <priority>0.5</priority>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
+  {% for page in site.pages %}
+    {% unless page.sitemap.exclude == "yes" %}
+    <url>
+      <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+      {% if page.sitemap.lastmod %}
+        <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+      {% elsif page.date %}
+        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if page.sitemap.changefreq %}
+        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+      {% else %}
+        <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if page.sitemap.priority %}
+        <priority>{{ page.sitemap.priority }}</priority>
+      {% else %}
+        <priority>0.3</priority>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
 </urlset>
