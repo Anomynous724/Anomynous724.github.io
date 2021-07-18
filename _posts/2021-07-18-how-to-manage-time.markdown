@@ -5,7 +5,7 @@ layout: post_detail
 date-created: 2021-07-18
 date-edited: 
 img: dreams.png
-thumbnail: 2021-07-18-how-to-mangage-time-thumbnail.jpg
+thumbnail: 2021-07-18-how-to-manage-time-thumbnail.jpg
 alt: image-alt
 category: Post
 description: Time and Energy Managing Skills
