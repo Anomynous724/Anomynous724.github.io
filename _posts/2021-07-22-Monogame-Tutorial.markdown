@@ -1,11 +1,11 @@
 ---
-title: Monogame Tutorial 1
+title: Monogame Tutorial
 subtitle: Monogame Tutorial
 layout: post_detail
 date-created: 2021-07-22
-date-edited: 
+date-edited: 2021-07-23
 img: dreams.png
-thumbnail: 2021-07-22-Monogame-Tutorial-1-thumbnail.png
+thumbnail: 2021-07-22-Monogame-Tutorial-thumbnail.png
 alt: image-alt
 category: [Post, Study]
 description: Monogame Tutorial
@@ -13,6 +13,7 @@ comments: true
 ---
 
 # Monogame Tutorial
+### 2021-07-22
 1.	Introduction
 2.	Installing visual Studio and Monogame
 3.	Creating new projects and code organization
@@ -65,6 +66,43 @@ targetSprite = Content.Load<Texture2D>("target");
 ```C#
 _spriteBatch.DrawString(gameFont, "Test Message", new Vector2(100, 100), Color.White);
 ```
+
+### 2021-07-23
+8.	Variables
+    1.	Declare variable
+    * Vector2 targetPosition = new Vector2(300, 300);
+    2.	Using variable
+    * _spriteBatch.Draw(targetSprite, targetPosition, Color.White);
+    3.	Declare constant variable
+    * Doesn’t change and cannot be changed
+    * Using const keyword
+
+9.	Mouse Input
+    1. State: What mouse do particular moment(click, moving, etc…)
+    * Because update method is executed in every frame, score increases more than 1.
+    2. Use mRelased that indicates mouse button released state
+
+10.	Shooting the Target
+    1. How can we tell that the mouse clicks the target?
+    * Calculate the distance between the mouse click point and center of the target
+    * If the distance is less than target’s radius, it’s hit
+    * The origin point of sprite is upper left corner
+    * Offset 
+```C#
+_spriteBatch.Draw(targetSprite, new Vector2(targetPosition.X - targetRadius, targetPosition.Y - targetRadius), Color.White);
+```
+
+11.	Randomness
+    1. Change Target Location Randomly after hit
+    * // Change target Position randomly
+    * // Range is exclusive
+    * Random random = new Random();
+```C#
+targetPosition.X = random.Next(0, _graphics.PreferredBackBufferWidth);
+targetPosition.Y = random.Next(0, _graphics.PreferredBackBufferHeight);
+```
+
+
 ---
 
 ### Reference
