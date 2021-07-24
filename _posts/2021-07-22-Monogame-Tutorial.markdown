@@ -47,10 +47,10 @@ comments: true
     2. Load Content
     * Term – SpriteBatch: A SpriteBatch is used to draw a whole bunch of sprites all at one time. ... We will then draw our sprites, and when we're done, we will indicate that we are done drawing our batch of sprites. Go down to the Draw() method and add the following three lines of code:
 
-```C#
-// Assign Imported assets(.xnb files = stream target) to targetSprite
-targetSprite = Content.Load<Texture2D>("target");
-```
+    ```C#
+    // Assign Imported assets(.xnb files = stream target) to targetSprite
+    targetSprite = Content.Load<Texture2D>("target");
+    ```
 
 6.	Drawing graphics #2
     1. _spriteBatch.Draw(targetSprite, new Vector2(0,0), Color.White);
@@ -63,9 +63,9 @@ targetSprite = Content.Load<Texture2D>("target");
     1.	SolutionExploer – Content – GalleryFont.sprite
     * In draw method:
 
-```C#
-_spriteBatch.DrawString(gameFont, "Test Message", new Vector2(100, 100), Color.White);
-```
+    ```C#
+    _spriteBatch.DrawString(gameFont, "Test Message", new Vector2(100, 100), Color.White);
+    ```
 
 ### 2021-07-23
 8.	Variables
@@ -88,19 +88,19 @@ _spriteBatch.DrawString(gameFont, "Test Message", new Vector2(100, 100), Color.W
     * If the distance is less than target’s radius, it’s hit
     * The origin point of sprite is upper left corner
     * Offset 
-```C#
-_spriteBatch.Draw(targetSprite, new Vector2(targetPosition.X - targetRadius, targetPosition.Y - targetRadius), Color.White);
-```
+    ```C#
+    _spriteBatch.Draw(targetSprite, new Vector2(targetPosition.X - targetRadius, targetPosition.Y - targetRadius), Color.White);
+    ```
 
 11.	Randomness
     1. Change Target Location Randomly after hit
     * // Change target Position randomly
     * // Range is exclusive
     * Random random = new Random();
-```C#
-targetPosition.X = random.Next(0, _graphics.PreferredBackBufferWidth);
-targetPosition.Y = random.Next(0, _graphics.PreferredBackBufferHeight);
-```
+    ```C#
+    targetPosition.X = random.Next(0, _graphics.PreferredBackBufferWidth);
+    targetPosition.Y = random.Next(0, _graphics.PreferredBackBufferHeight);
+    ```
 
 
 ---
