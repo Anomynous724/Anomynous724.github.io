@@ -18,8 +18,8 @@
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p>{{ post.description }}</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="{{post.client-url}}" target="_blank">{{ post.client }}</a>
+                                <li>Project:
+                                    <strong><a href="{{post.project-link}}" target="_blank">Link</a>
                                     </strong>
                                 </li>
                                 <li>Start Date:
@@ -30,13 +30,10 @@
                                     <strong>{{ post.project-end-date }}
                                     </strong>
                                 </li>
-                                <li>Stack:
-                                    <strong>{{ post.category }}
-                                    </strong>
-                                </li>
+                                <br>
                             </ul>
                             <div class="row text-center">
-                                <a href="{{ post.url }}" class="btn btn-primary">Tell Me More</a>
+                                <a href="{{post.project-link}}" class="btn btn-primary">Tell Me More</a>
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
