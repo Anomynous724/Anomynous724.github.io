@@ -1,6 +1,6 @@
 ---
 title: Coding Challege 3
-subtitle: Programmers Coding Challege Develop Features
+subtitle: Programmers Coding Challege
 layout: post_detail
 date-created: 2021-08-11
 date-edited: 
